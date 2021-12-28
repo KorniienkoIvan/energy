@@ -1,0 +1,127 @@
+.aboutUs
+    &_block
+        height: 100vh 
+        display: flex 
+        align-items: center 
+        position: relative
+        justify-content: center
+        background-size: cover
+        background-repeat: no-repeat
+        overflow: hidden
+        &__content 
+            max-width: 1200px
+            z-index: 2
+            position: relative
+        &__title
+            * 
+                color: #fff 
+                font-size: 114px
+                text-align: center
+                line-height: 0.985
+        &__subtitle
+            *
+                font-size: 27px
+                color: #fff
+                text-align: center
+                line-height: 1.4
+                margin-top: 34px 
+        &:first-child 
+            .aboutUs_block__lines1 
+                &::before 
+                    position: absolute
+                    content: ""
+                    width: 19.5% 
+                    top: 27% 
+                    left: -3%
+                    transform: rotate(45deg)
+                    height: 1px 
+                    background: #FF8000
+                &::after 
+                    position: absolute
+                    content: ""
+                    width: 7.4%
+                    height: 1px
+                    background: #3ec0bd
+                    top: 41%
+                    left: 2%
+                    -webkit-transform: rotate(45deg)
+                    transform: rotate(45deg)
+            .aboutUs_block__lines2
+                &::before 
+                    position: absolute
+                    content: ""
+                    width: 7.4%
+                    height: 1px
+                    transform: rotate(45deg)
+                    top: 22%
+                    left: 22%
+                    background: #3EC0BD
+                &::after 
+                    position: absolute
+                    content: ""
+                    width: 24.7%
+                    height: 1px
+                    background: #004F59
+                    top: 17%
+                    left: 27.4%
+                    -webkit-transform: rotate(45deg)
+                    transform: rotate(45deg)
+            .aboutUs_block__lines3
+                &::before 
+                    position: absolute
+                    content: ""
+                    width: 16.2%
+                    height: 1px
+                    transform: rotate(45deg)
+                    bottom: 13%
+                    right: 28%
+                    background: #00B08E
+                &::after 
+                    position: absolute
+                    content: ""
+                    width: 24.7%
+                    height: 1px
+                    background: #64067E
+                    right: -4%
+                    top: 28%
+                    -webkit-transform: rotate(45deg)
+                    transform: rotate(45deg)
+        &:nth-child(2)
+            .aboutUs_block__lines1 
+                &::before 
+                    position: absolute
+                    content: ""
+                    transform: rotate(45deg)
+                    height: 1px 
+                    width: 12.8% 
+                    top: 16.3%
+                    left: 40.5%
+                    background: #9ED2D0
+                &::after 
+                    position: absolute
+                    content: ""
+                    height: 1px
+                    background: #FF2E3E
+                    width: 17.3%
+                    top: 11%
+                    right: 37%
+                    transform: rotate(45deg)
+            .aboutUs_block__lines2
+                &::before 
+                    position: absolute
+                    content: ""
+                    height: 1px
+                    transform: rotate(45deg)
+                    background: #00B08E
+                    width: 20%
+                    left: 1% 
+                    bottom: 1%
+                &::after 
+                    position: absolute
+                    content: ""
+                    height: 1px
+                    background: #F3A600
+                    width: 26.4%
+                    right: -4%
+                    top: 30%
+                    transform: rotate(45deg)

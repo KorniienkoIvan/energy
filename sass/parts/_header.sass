@@ -1,0 +1,66 @@
+.header 
+	padding-top: 40px
+	padding-left: 80px 
+	padding-right: 30px
+	max-width: 1920px 
+	background: transparent 
+	display: flex
+	position: absolute
+	z-index: 2
+	justify-content: space-between
+	width: 100% 
+	.logo 
+		width: 100% 
+		max-width: 273px 
+	.social_media_wrapper
+		display: flex
+		padding-top: 10px 
+		.social_media
+			display: block 
+			&:first-child 
+				margin-right: 28px
+			img 
+				width: 30px 
+				height: 30px 
+	.menu 
+		display: flex 
+		padding-top: 8px
+		&_wrapper 
+			margin-left: auto 
+			margin-right: 170px
+		li 
+			margin-right: 69px 
+			line-height: 1
+			a 
+				color: #FFFFFF
+				font-size: 26px
+				position: relative
+				&::after 
+					content: ""
+					height: 4px 
+					left: -2px 
+					background: #fff 
+					bottom: -6px
+					position: abolute
+					width: calc( 100% + 4px )
+					transform: scale(0) 
+					position: absolute
+					transition: .3s
+					transform-origin: left
+				&:hover 
+					&::after 
+						transform: scale(1)
+			&:last-child 
+				margin-right: 0
+			&.current-menu-item 
+				a 
+					position: relative 
+					&::after 
+						height: 4px 
+						bottom: -6px 
+						content: ""
+						position: absolute
+						left: -2px
+						right: -2px
+						background: #fff
+						transform: scale(1)
