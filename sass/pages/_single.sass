@@ -1,0 +1,157 @@
+.single-page
+    &__wrapper
+        .container 
+            max-width: 1230px 
+            padding-right: 184px
+        .right_side_image
+            position: absolute
+            right: 0
+            top: 0
+            width: 66.4%
+            &::before 
+                content: ""
+                display: block
+                padding-top: 100%
+            img 
+                height: 100%
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%)
+                width: 100%
+                object-position: bottom left
+                object-fit: cover
+                position: absolute
+                top: 0
+                right: 0
+        .left_side_background 
+            width: 42.7%
+            position: absolute
+            left: 0
+            top: 0
+            background: #121938
+            clip-path: polygon(0 0,100% 0,100% 0,0 100%)
+            z-index: 1
+            &::before 
+                content: ""
+                display: block
+                padding-top: 100%
+        .separator 
+            width: 46.9%
+            background: #CA3240
+            height: 24px
+            margin-bottom: 82px
+            margin-top: 70px
+    &__lines1
+        &::before 
+            content: ""
+            position: absolute
+            left: -2%
+            top: 26.8%
+            width: 11%
+            height: 2px
+            background: #F3A600
+            transform: rotate(45deg)
+        &::after
+            content: ""
+            background: #FF8000
+            position: absolute
+            right: 28.5% 
+            top: 10%
+            transform: rotate(45deg)
+            width: 27.71%
+            height: 1px 
+    &__lines2
+        &::before 
+            content: ""
+            height: 2px 
+            position: absolute
+            left: 11%
+            top: 34.5%
+            background: #00B08E
+            width: 16.2%
+            transform: rotate(45deg)
+            z-index: 2
+    &__content 
+        padding-top: 278px 
+    &__logo 
+        max-width: 77.54%
+        margin-right: auto 
+        margin-left: 0
+        img
+            width: 198px
+            height: auto 
+            object-fit: contain
+            display: block
+            margin-left: auto 
+            margin-right: auto
+    &__title 
+        padding-top: 110px
+        font-size: 80px
+        margin-bottom: 44px 
+    &__subtitle 
+        p
+            font-size: 40px 
+            line-height: 1
+    &__slider
+        margin-left: calc( (1230px - 100vw)/2 - 30px)
+        margin-right: calc( (1230px - 100vw)/2 - 184px)
+        height: 327px 
+        margin-top: 52px
+        margin-bottom: 59px
+        .slick-track 
+            max-height: 100%
+        img 
+            height: 327px 
+            object-fit: contain
+            object-fit: contain
+            max-width: 25%
+    &__image 
+        margin-left: calc( (1230px - 100vw)/2 - 30px)
+        margin-right: calc( (1230px - 100vw)/2 - 184px)
+        margin-top: 125px
+        img
+            width: 100% 
+            object-fit: cover
+            object-position: center
+            max-height: 910px
+    &__additional-text 
+        .title 
+            font-size: 40px
+            line-height: 1
+            margin-bottom: 20px
+        .text 
+            display: flex 
+            .left-col 
+                width: 48.3%
+                margin-right: auto
+            .right-col 
+                width: 44.2%
+.testimonial
+    min-height: 920px
+    position: relative
+    padding-bottom: 42px
+    background: #00A684
+    clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
+    overflow: hidden
+    margin-bottom: 42px
+    &__text 
+        font-size: 43px
+        color: #fff
+        padding-top: 112px
+        line-height: 1.44
+    &__author
+        font-size: 40px
+        line-height: 1.55
+    &__slider
+        position: relative
+        text-align: center
+        max-width: 1120px
+        padding-left: 50px
+        padding-right: 50px
+        margin-left: auto 
+        margin-right: auto
+        .slick-track 
+            display: flex
+    &__content
+        opacity: 0
+        transition: .3s 
+        &.slick-current 
+            opacity: 1

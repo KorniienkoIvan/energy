@@ -31,3 +31,26 @@ $('.appear').each(function() {
         offset: '95%'
     });
 });
+
+$(document).ready(function(){
+    //Single Page Slider
+    $('.single-page__slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        cssEase: 'linear',
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 300,
+    });
+    $('.testimonial__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        arrows: false,
+    });
+});

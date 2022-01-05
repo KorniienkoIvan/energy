@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-section.quote_block
+<?php echo 'single' ?>
 <?php get_footer(); ?>

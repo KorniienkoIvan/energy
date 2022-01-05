@@ -1,0 +1,313 @@
+.hero_block
+    background-color: #CA3240
+    height: calc( 100vh - 90px )
+    position: relative
+    .background_image 
+        position: absolute
+        bottom: 11.2% 
+        top: 0
+        left: 4.79%
+        right: 4.79%
+        background-color: #000000
+        clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: #000
+            opacity: .4
+        img 
+            width: 100% 
+            height: 100% 
+            object-fit: cover
+            max-width: 86.55%
+            display: block
+            margin-left: auto 
+            margin-right: auto
+            position: relative
+        .img_arrow 
+            background: #fff
+            width: 5.86%
+            position: absolute
+            right: 50%
+            transform: translateX(45%)
+            bottom: 34px
+            z-index: 4
+            clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
+            &::before 
+                content: ""
+                display: block
+                padding-bottom: 50%
+    .background_lines1
+        &::before
+            content: ""
+            position: absolute
+            -webkit-transform: rotate(45deg)
+            transform: rotate(45deg)
+            background: #94c8c6
+            bottom: 19.2%
+            left: -2%
+            width: 12.5%
+            height: 2px
+        &::after 
+            content: ""
+            position: absolute
+            -webkit-transform: rotate(45deg)
+            transform: rotate(45deg)
+            background: #00A684
+            height: 2px
+            bottom: 7.7%
+            right: -0.8%
+            width: 11.4%
+    .background_lines2
+        &::before 
+            content: ""
+            position: absolute
+            height: 1px
+            top: 9.3%
+            left: 20% 
+            width: 13.725%
+            background: #FF8000
+            transform: rotate(45deg) 
+        &::after 
+            content: ""
+            position: absolute 
+            right: 19.9%
+            top: 58.1%
+            width: 28.46%
+            height: 1px 
+            background: #E99C00
+            transform: rotate(45deg) 
+    .right_triangular
+        height: 100%
+        width: 56.5%
+        margin-left: auto
+        background: #fff
+        clip-path: polygon(91.4% 0%,100% 0,100% 100%,0% 100%)
+    .container 
+        position: absolute 
+        top: calc( 50% + 50px )
+        left: 0
+        right: 0
+        transform: translateY(-50%)
+        padding-left: 110px 
+        padding-right: 110px 
+        max-width: 100%
+    &__title 
+        font-size: 150px
+        line-height: 0.813
+        color: #fff 
+        max-width: 1052px 
+    &__subtitle
+        color: #fff 
+        font-size: 28px
+        line-height: 1.36
+        margin-left: 10px 
+        max-width: 585px
+.anchor_links_line
+    background: #121938
+    max-height: 90px
+    .container
+        max-width: 1560px 
+        padding-left: 50px
+        padding-right: 50px
+    &__list 
+        display: flex 
+        justify-content: center
+    &__item 
+        width: 35%
+        clip-path: polygon(0% 0%,82.5% 0%,100% 100%,17.5% 100%)
+        a
+            color: #fff
+            height: 91px 
+            font-size: 32px
+            padding-top: 32.1px 
+            padding-bottom: 25.9px
+            line-height: 1
+            display: flex 
+            justify-content: center 
+            align-items: center
+        &:first-child
+            background: #DE9919
+            margin-right: -2%
+        &:nth-child(2)
+            background: #00A684
+            margin-left: -1%
+            margin-right: -1%
+        &:last-child
+            background: #94C8C6
+            margin-left: -2%
+.brand_experience
+    position: relative
+    padding-bottom: 112px
+    .background_triangular
+        width: 38.8% 
+        background: #DE9919
+        clip-path: polygon(0 0,100% 0,0% 100%,0 100%)
+        position: absolute 
+        top: 0
+        left: 0
+        &::before 
+            content: ""
+            display: block 
+            padding-bottom: 100%
+    &__line 
+        &::before 
+            position: absolute
+            width: 12.5%
+            top: 17.67%
+            right: 7.47%
+            content: ""
+            background: #94C8C6
+            height: 2px
+            transform: rotate(45deg)
+            z-index: 2
+    &__top 
+        position: relative
+        padding-top: 114px
+        margin-bottom: 134px
+        max-width: 1350px 
+        margin-right: auto
+        .top_triangular
+            background: #DE9919
+            width: 63px
+            height: 31.5px
+            clip-path: polygon(0% 0%,100% 0%,50% 100%,50% 100%)
+            margin-left: auto
+            margin-bottom: 20px
+        .container 
+            max-width: 1150px
+            margin-left: auto
+            margin-right: 0
+            padding-right: 0
+        .separator 
+            height: 24px 
+            background: #E99C00
+            width: 38.9%
+            margin-left: auto 
+    &__title 
+        font-size: 80px 
+        line-height: 1.05
+        text-align: right
+        margin-bottom: 24px
+    &__subtitle 
+        font-size: 40px
+        line-height: 1
+        text-align: right
+        max-width: 840px
+        margin-left: auto
+        margin-bottom: 34px 
+    &__bottom 
+        .container 
+            max-width: 51.3%
+            margin-left: 0 
+            padding-left: 7.7%
+            box-sizing: content-box
+    &__content 
+        display: flex 
+        .left_column 
+            width: 48.3%
+        .right_column 
+            width: 44.2%
+            margin-left: auto 
+    .bottom_background_triangular 
+        width: 57.25%
+        position: absolute
+        bottom: 0 
+        right: 0
+        clip-path: polygon(0 100%,100% 0,100% 100%,0% 100%)
+        background-image: url('../assets/images/brand-experience-background-triangular.png')
+        &::before 
+            content: ""
+            display: block
+            padding-top: 100%
+.experimental
+    .container 
+        max-width: 1550px 
+    &__header 
+        background: #00A684
+        padding-top: 190px 
+        padding-bottom: 103px
+        position: relative
+        &__title 
+            color: #fff 
+            font-size: 80px 
+            line-height: 1.05
+            text-align: right
+            max-width: 1140px
+            margin-left: auto 
+            &::before 
+                content: ""
+                width: 63px
+                margin-left: 25.7%
+                height: 31.5px 
+                background: #121938
+                display: block
+                margin-bottom: 22px
+                clip-path: polygon(0% 0%,100% 0,50% 100%,0 0%)
+        &__triangular
+            width: 42.75%
+            background: #fff 
+            position: absolute
+            top: -1px
+            left: 0
+            z-index: 2
+            clip-path: polygon(0% 0%,100% 0,0% 100%,0 0%)
+            &::before 
+                content: ""
+                display: block
+                padding-bottom: 100%
+        &__line 
+            &::before 
+                content: ""
+                position: absolute
+                top: 14% 
+                left: 1.13%
+                width: 23.039%
+                height: 1px 
+                background: #E99C00
+                transform: rotate(45deg)
+    &__main 
+        position: relative
+        .left_triangular_image
+            position: absolute
+        &__content 
+            text-align: right
+            max-width: 722px
+            margin-left: auto
+        &__title
+            font-size: 40px
+            line-height: 1
+            margin-bottom: 39px
+            padding-top: 58.3px 
+        &__text
+            width: 81.3%
+            margin-left: auto 
+            margin-top: 53.6px
+            padding-bottom: 88px
+        .separator
+            height: 24px 
+            background: #00A684
+            width: 43.6%
+            margin-left: auto 
+        .left_triangular_image
+            background: #333333
+            width: 37.29%
+            position: absolute
+            top: -49%
+            clip-path: polygon(0% 0%,100% 50%,0% 100%,0% 0)
+            &::before 
+                content: ""
+                display: block
+                padding-bottom: 200%
+            img 
+                position: absolute
+                top: 46.5%
+                transform: translateY(-50%)
+                width: 97.625%
+                margin-left: -34px
+.digital_experience 
+    height: 350px
