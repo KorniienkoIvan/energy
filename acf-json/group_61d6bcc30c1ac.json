@@ -81,6 +81,58 @@
             "new_lines": ""
         },
         {
+            "key": "field_61d70ab47eed9",
+            "label": "Anchor links line",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61d70ad37eeda",
+            "label": "Links",
+            "name": "links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_61d70adc7eedb",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
             "key": "field_61d6bd41e4516",
             "label": "Brand Experience",
             "name": "",
@@ -95,6 +147,25 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_61d70b3d7eedc",
+            "label": "Block Id",
+            "name": "brand_experience_block_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61d6bee8e4517",
@@ -213,6 +284,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_61d70b457eedd",
+            "label": "Block Id",
+            "name": "experimantal_ooh_block_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61d6c05f9e98c",
             "label": "Header Title",
             "name": "experimental_ooh_header_title",
@@ -308,6 +398,25 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_61d70b4a7eee1",
+            "label": "Block Id",
+            "name": "digital_experience_block_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61d6d176e2a39",
@@ -431,6 +540,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_61d70b497eee0",
+            "label": "Block Id",
+            "name": "slider_block_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61d6d1eedf523",
             "label": "Brand slider",
             "name": "brand_slider",
@@ -490,6 +618,25 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_61d70b487eedf",
+            "label": "Block Id",
+            "name": "cards_block_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61d6d21edf526",
@@ -627,6 +774,25 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_61d70b4f7eee2",
+            "label": "Block Id",
+            "name": "staff_block_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61d6d2a538f14",
@@ -812,5 +978,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1641469364
+    "modified": 1641483233
 }

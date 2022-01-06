@@ -110,6 +110,7 @@
 .anchor_links_line
     background: #121938
     max-height: 90px
+    overflow: hidden
     .container
         max-width: 1560px 
         padding-left: 50px
@@ -214,7 +215,7 @@
             width: 44.2%
             margin-left: auto 
     .bottom_background_triangular 
-        width: 57.25%
+        width: calc(57.25% + 2px)
         position: absolute
         bottom: 0 
         right: 0
@@ -239,6 +240,7 @@
         padding-top: 190px 
         padding-bottom: 103px
         position: relative
+        margin-top: -1px
         &__title 
             color: #fff 
             font-size: 80px 
@@ -418,7 +420,7 @@
         width: 20% 
         position: absolute
         left: 0
-        bottom: 0
+        bottom: -1px
         background: #CA3240
         clip-path: polygon(0% 0%,100% 100%,0% 100%,0% 0%)
         &::before 
