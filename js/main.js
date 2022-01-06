@@ -53,4 +53,13 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
     });
+    $('.brands_line__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+    });
 });
