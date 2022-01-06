@@ -219,7 +219,14 @@
         bottom: 0 
         right: 0
         clip-path: polygon(0 100%,100% 0,100% 100%,0% 100%)
-        background-image: url('../assets/images/brand-experience-background-triangular.png')
+        img 
+            width: 100% 
+            height: 100% 
+            object-fit: cover 
+            object-position: center
+            position: absolute
+            top: 0
+            right: 0
         &::before 
             content: ""
             display: block
@@ -583,3 +590,6 @@
                 margin-bottom: 0
             &.contact__data__phone 
                 margin-bottom: 0
+        &__google-maps
+            a 
+                text-decoration: underline
