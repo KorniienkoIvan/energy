@@ -7,9 +7,16 @@
         padding-top: 70px
         position: relative
         line-height: 1
-        padding-bottom: 49px
         display: block
         cursor: pointer 
+        +max-screen(992px)
+            font-size: 24px
+            padding-top: 50px 
+            margin-top: -105px
+        +max-screen(768px)
+            font-size: 20px
+            margin-top: -80px
+            padding-top: 40px
         &::before 
             content: ""
             position: absolute 
@@ -19,7 +26,14 @@
             width: 102px 
             height: 50px 
             background-image: url('../assets/images/back_button_icon.svg') 
-            background-repeat: no-repeat 
+            background-repeat: no-repeat
+            background-size: cover
+            +max-screen(992px)
+                width: 80px
+                height: 40px
+            +max-screen(768px)
+                width: 60px 
+                height: 30px  
     .single-case_study & 
         .back_to_top_button
             margin-top: -261px
