@@ -62,4 +62,9 @@ $(document).ready(function(){
         arrows: false,
         centerMode: true,
     });
+
+    //Mobile Header 
+    $('.header .mobile_burger_icon').click(function(){
+        $('.header').toggleClass('open');
+    });
 });

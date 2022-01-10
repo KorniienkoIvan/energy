@@ -13,24 +13,20 @@
 	<div class="background_lines1"></div>
 	<div class="background_lines2"></div>
 	<div class="container">
-		<?php if($title): ?><div class="hero_block__title"><?php echo $title; ?></div><?php endif; ?>
+		<?php if($title): ?><h1 class="hero_block__title"><?php echo $title; ?></h1><?php endif; ?>
 		<?php if($subtitle): ?><div class="hero_block__subtitle"><?php echo $subtitle; ?></div><?php endif; ?>
 	</div>
 </section>
-<?php if(have_rows('links')): ?>
 <section class="anchor_links_line">
 	<div class="container">
 		<ul class="anchor_links_line__list">
-			<?php while(have_rows('links')): the_row(); ?>
-				<?php $link = get_sub_field('link'); ?>
-				<li class="anchor_links_line__item"><a href="<?php echo $link['url'] ?>"><?php echo $link['title']; ?></a></li>
-			<?php endwhile; ?>
+			<li class="anchor_links_line__item"><a href="#">Brand Experiences</a></li>
+			<li class="anchor_links_line__item"><a href="#">Experiential OOH</a></li>
+			<li class="anchor_links_line__item"><a href="#">Digital Experiences</a></li>
 		</ul>
 	</div>
 </section>
-<?php endif; ?>
-<?php $id = get_field('brand_experience_block_id'); ?>
-<section class="brand_experience" <?php if($id){echo 'id="' . $id . '"';} ?>>
+<section class="brand_experience">
 	<div class="background_triangular"></div>
 	<div class="brand_experience__line"></div>
 	<div class="brand_experience__top">
@@ -44,14 +40,14 @@
 			?>
 			<div class="top_triangular"></div>
 			<?php if($title): ?>
-				<div class="brand_experience__title">
+				<h2 class="brand_experience__title">
 					<?php echo $title; ?>
-				</div>
+				</h2>
 			<?php endif; ?>
 			<?php if($subtitle): ?>
-				<div class="brand_experience__subtitle">
+				<h3 class="brand_experience__subtitle">
 					<?php echo $subtitle; ?>
-				</div>
+				</h3>
 			<?php endif; ?>
 			<div class="separator"></div>
 		</div>
@@ -76,8 +72,7 @@
 		<img src="<?php if($image){echo $image;}else{ echo get_template_directory_uri() . '/assets/images/brand-experience-background-triangular.png';} ?>" alt="">
 	</div>
 </section>
-<?php $id = get_field('experimantal_ooh_block_id'); ?>
-<section class="experimental" <?php if($id){echo 'id="' . $id . '"';} ?>>
+<section class="experimental">
 	<div class="experimental__header">
 		<div class="experimental__header__triangular"></div>
 		<div class="experimental__header__line"></div>
@@ -89,9 +84,9 @@
 		?>
 		<div class="container">
 			<?php if($header_title): ?>
-				<div class="experimental__header__title">
+				<h2 class="experimental__header__title">
 					<?php echo $header_title; ?>
-				</div>
+				</h2>
 			<?php endif; ?>
 		</div>
 	</div>
@@ -103,7 +98,7 @@
 		<div class="container">
 			<div class="experimental__main__content">
 				<?php if($title): ?>
-					<div class="experimental__main__title"><?php echo $title; ?></div>
+					<h3 class="experimental__main__title"><?php echo $title; ?></h3>
 				<?php endif; ?>
 				<div class="separator"></div>
 				<?php if($text): ?>
@@ -115,8 +110,7 @@
 		</div>
 	</div>
 </section>
-<?php $id = get_field('digital_experience_block_id'); ?>
-<section class="digital_experience" <?php if($id){echo 'id="' . $id . '"';} ?>>
+<section class="digital_experience">
 	<div class="top_triangular"></div>
 	<div class="right_triangular"></div>
 	<?php 
@@ -129,15 +123,15 @@
 	<div class="container">
 		<div class="digital_experience__contentWrapper">
 			<?php if($title): ?>
-				<div class="digital_experience__title">
+				<h2 class="digital_experience__title">
 					<?php echo $title; ?>
-				</div>
+				</h2>
 			<?php endif; ?>
 			<div class="digital_experience__content">
 				<?php if($subtitle): ?>
-					<div class="digital_experience__subtitle">
+					<h3 class="digital_experience__subtitle">
 						<?php echo $subtitle; ?>
-					</div>
+					</h3>
 				<?php endif; ?>
 				<div class="separator"></div>
 				<?php if($text): ?>
@@ -150,12 +144,11 @@
 		<img src="<?php if($left_image){echo $left_image;}else{echo get_template_directory_uri() . '/assets/images/OPEE04.jpg';} ?>" alt="">
 	</div>
 	<div class="bottom_right_image">
-		<img src="<?php if($right_image){echo $right_image['url'];}else{ echo get_template_directory_uri() . '/assets/images/OPEE05.jpg';} ?>" alt="">
+		<img src="<?php if($right_image){echo $right_image;}else{ echo get_template_directory_uri() . '/assets/images/OPEE05.jpg';} ?>" alt="">
 	</div>
 </section>
 <?php if(have_rows('brand_slider')): ?>
-<?php $id = get_field('slider_block_id'); ?>
-<section class="brands_line" <?php if($id){echo 'id="' . $id . '"';}?>>
+<section class="brands_line">
 	<div class="brands_line__slider">
 		<?php while(have_rows('brand_slider')): the_row(); ?>
 			<div class="brands_line__item"><img src="<?php the_sub_field('brand_image') ?>" alt=""></div>
@@ -163,8 +156,7 @@
 	</div>
 </section>
 <?php endif; ?>
-<?php $id = get_field('cards_block_id'); ?>
-<section class="home_page_cards_wrapper" <?php if($id){echo 'id="' . $id . '"';}?>>
+<section class="home_page_cards_wrapper">
 	<?php if(have_rows('cards')): ?>
 		<div class="row home_page_cards">
 			<?php while(have_rows('cards')): the_row(); ?>
@@ -197,8 +189,7 @@
 		</div>
 	<?php endif; ?>
 </section>
-<?php $id = get_field('staff_block_id'); ?>
-<section class="contact" <?php if($id){echo 'id="' . $id . '"';}?>>
+<section class="contact">
 	<?php if(have_rows('staff')): ?>
 		<div class="contact__cards_wrapper">
 			<div class="background_rectangle"></div>

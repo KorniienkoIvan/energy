@@ -20,8 +20,8 @@ Template Name: Single page
                 $header_content = get_field('single_header_content');
             ?>
             <?php if($header_logo): ?><div class="single-page__logo"><img src="<?php echo $header_logo; ?>" alt=""></div><?php endif; ?>
-            <?php if($header_title): ?><div class="single-page__title"><?php echo $header_title; ?></div><?php endif; ?>
-            <?php if($header_content): ?><div class="single-page__subtitle"><?php echo $header_content; ?></div><?php endif; ?>
+            <?php if($header_title): ?><h2 class="single-page__title"><?php echo $header_title; ?></h2><?php endif; ?>
+            <?php if($header_content): ?><h3 class="single-page__subtitle"><?php echo $header_content; ?></h3><?php endif; ?>
             <div class="separator"></div>
             <?php 
                 $challenge_title = get_field('challenge_title');
@@ -29,7 +29,7 @@ Template Name: Single page
                 $challenge_right_column = get_field('challenge_right_column');
             ?>
             <div class="single-page__additional-text">
-                <?php if($challenge_title): ?><div class="title"><?php echo $challenge_title; ?></div><?php endif; ?>
+                <?php if($challenge_title): ?><h3 class="title"><?php echo $challenge_title; ?></h3><?php endif; ?>
                 <?php if($challenge_left_column || $challenge_right_column): ?>
                     <div class="text">
                         <div class="left-col"><?php echo $challenge_left_column; ?></div>
@@ -51,7 +51,7 @@ Template Name: Single page
                 $results_right_column = get_field('results_right_column');
             ?>
             <div class="single-page__additional-text">
-                <?php if($results_title): ?><div class="title"><?php echo $results_title; ?></div><?php endif; ?>
+                <?php if($results_title): ?><h3 class="title"><?php echo $results_title; ?></h3><?php endif; ?>
                 <?php if($results_left_column || $results_right_column): ?>
                     <div class="text">
                         <div class="left-col"><?php echo $results_left_column; ?></div>
@@ -78,12 +78,12 @@ Template Name: Single page
                     $content = $testimonial->post_content;    
                 ?>
                 <div class="testimonial__content">
-                    <div class="testimonial__text">
+                    <h3 class="testimonial__text">
                         <?php echo $content; ?>
-                    </div>
-                    <div class="testimonial__author">
+                    </h3>
+                    <h3 class="testimonial__author">
                         <?php echo $title; ?>
-                    </div>
+                    </h3>
                 </div>
             <?php endforeach; ?>
         </div>

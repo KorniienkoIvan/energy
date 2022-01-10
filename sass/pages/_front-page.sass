@@ -96,11 +96,19 @@
         padding-left: 110px 
         padding-right: 110px 
         max-width: 100%
-    &__title 
+    h1 
         font-size: 150px
         line-height: 0.813
         color: #fff 
         max-width: 1052px 
+        +max-screen(1440px)
+            font-size: 120px
+        +max-screen(1200px)
+            font-size: 100px
+        +max-screen(768px)
+            font-size: 84px
+        +max-screen(576px)
+            font-size: 50px
     &__subtitle
         color: #fff 
         font-size: 28px
@@ -190,13 +198,9 @@
             width: 38.9%
             margin-left: auto 
     &__title 
-        font-size: 80px 
-        line-height: 1.05
         text-align: right
         margin-bottom: 24px
     &__subtitle 
-        font-size: 40px
-        line-height: 1
         text-align: right
         max-width: 840px
         margin-left: auto
@@ -243,8 +247,6 @@
         margin-top: -1px
         &__title 
             color: #fff 
-            font-size: 80px 
-            line-height: 1.05
             text-align: right
             max-width: 1140px
             margin-left: auto 
@@ -289,8 +291,6 @@
             max-width: 722px
             margin-left: auto
         &__title
-            font-size: 40px
-            line-height: 1
             margin-bottom: 39px
             padding-top: 58.3px 
         &__text
@@ -326,7 +326,6 @@
         padding-left: 50px 
         padding-right: 50px 
     &__title 
-        font-size: 80px
         line-height: 1.1625
         margin-bottom: 82px
         padding-top: 97px
@@ -340,8 +339,6 @@
             clip-path: polygon(0 0,100% 0,50% 100%,0 0)
             margin-left: -20px
     &__subtitle 
-        font-size: 40px
-        line-height: 1
         margin-bottom: 38px 
         margin-right: 5px
     .separator 

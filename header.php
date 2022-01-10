@@ -28,8 +28,11 @@
 
 	<header id="header" class="header">
 		<div class="logo">
-			<?php $logo = get_field('header_logo', 'option'); ?>
-			<?php if($logo): ?><a href="<?php echo get_home_url(  ) ?>"><img src="<?php echo $logo; ?>" alt=""></a><?php endif; ?>
+			<?php 
+                $logo = get_field('header_logo', 'option'); 
+
+            ?>
+            <?php if($logo): ?><a href="<?php echo get_home_url(  ) ?>"><?php echo file_get_contents(wp_get_original_image_path($logo['id'])); ?></a><?php endif; ?>
 		</div>
 		<div class="menu_wrapper">
 			<?php 
@@ -59,6 +62,12 @@
 				<?php endwhile; ?>
 			</div>
 		<?php endif; ?>
+		<div class="mobile_burger_icon">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 	</header>
 
 	<div id="main">

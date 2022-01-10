@@ -8,19 +8,20 @@
         background-size: cover
         background-repeat: no-repeat
         overflow: hidden
+        background-position: center
         &__content 
             max-width: 1200px
             z-index: 2
             position: relative
+            +max-screen(1440px)
+                max-width: 70%
         &__title
             * 
                 color: #fff 
-                font-size: 114px
                 text-align: center
                 line-height: 0.985
         &__subtitle
             *
-                font-size: 27px
                 color: #fff
                 text-align: center
                 line-height: 1.4

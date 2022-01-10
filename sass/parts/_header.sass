@@ -9,32 +9,99 @@
 	z-index: 2
 	justify-content: space-between
 	width: 100% 
+	+max-screen(992px)
+		padding-left: 40px
+	+max-screen(768px)
+		flex-direction: row
+		&.open 
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			border: 0
+			background: #fff
+			height: 100%
+			flex-direction: column
+			padding-left: 30px
+			justify-content: center
+			z-index: 99
+			display: flex 
 	.logo 
 		width: 100% 
 		max-width: 273px 
+		a
+			display: flex 
+		svg
+			width: 100%
+			height: 100%
+		+max-screen(1440px)
+			max-width: 220px
+		+max-screen(1200px)
+			max-width: 200px
+		+max-screen(992px)
+			max-width: 160px
 	.social_media_wrapper
 		display: flex
 		padding-top: 10px 
+		justify-content: center
+		display: none
 		.social_media
 			display: block 
 			&:first-child 
 				margin-right: 28px
+				+max-screen(992px)
+					margin-right: 18px
 			img 
 				width: 30px 
 				height: 30px 
+				+min-screen(769px)
+					+max-screen(1200px)
+						width: 24px 
+						height: 24px 
+					+max-screen(992px)
+						width: 20px 
+						height: 20px 
 	.menu 
 		display: flex 
 		padding-top: 8px
+		+max-screen(768px)
+			flex-direction: column 
+			text-align: center
+			display: none
 		&_wrapper 
 			margin-left: auto 
-			margin-right: 170px
+			margin-right: 9.4%
+			+max-screen(1440px)
+				margin-right: 5%
+			+max-screen(1200px)
+				margin-right: 3%
+			+max-screen(992px)
+				margin-right: 2%
+			+max-screen(768px)
+				margin-right: auto
 		li 
 			margin-right: 69px 
 			line-height: 1
+			+max-screen(1440px)
+				margin-right: 42px
+			+max-screen(1200px)
+				margin-right: 32px
+			+max-screen(768px)
+				margin-right: 0 
+				margin-bottom: 24px 
 			a 
 				color: #FFFFFF
 				font-size: 26px
 				position: relative
+				+max-screen(1440px)
+					font-size: 22px
+				+max-screen(1200px)
+					font-size: 18px
+				+max-screen(992px)
+					font-size: 16px
+				+max-screen(768px)
+					font-size: 24px
+					color: #121938
 				&::after 
 					content: ""
 					height: 4px 
@@ -64,6 +131,64 @@
 						right: -2px
 						background: #fff
 						transform: scale(1)
+		
+	.mobile_burger_icon
+		width: 30px
+		height: 22.5px
+		position: absolute
+		top: 40px 
+		right: 30px
+		margin: 0
+		transform: rotate(0deg)
+		transition: .5s ease-in-out
+		cursor: pointer
+		span 
+			display: block
+			position: absolute
+			height: 4px
+			width: 100%
+			background: #fff
+			border-radius: 9px
+			opacity: 1
+			left: 0
+			transform: rotate(0deg)
+			transition: .25s ease-in-out
+		span:nth-child(1) 
+			top: 0px
+		span:nth-child(2),
+		span:nth-child(3) 
+			top: 10px
+		span:nth-child(4) 
+			top: 21px
+	&.open 
+		.mobile_burger_icon 
+			span
+				background: #121938
+				&:nth-child(1) 
+					top: 10px
+					width: 0%
+					left: 50%
+				&:nth-child(2) 
+					transform: rotate(45deg)
+				&:nth-child(3) 
+					transform: rotate(-45deg)
+				&:nth-child(4) 
+					top: 10px
+					width: 0%
+					left: 50%
+		.logo 
+			position: absolute
+			top: 40px 
+			left: 40px 
+			svg path 
+				fill: #121938
+		.menu,
+		.social_media_wrapper
+			+max-screen(768px)
+				display: flex 
+
+
+
 .single-case_study
 	.header .menu li a::after 
 		background: #CA3240

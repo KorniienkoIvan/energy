@@ -13,24 +13,68 @@ body
   	-webkit-backface-visibility: hidden
   	-webkit-tap-highlight-color: transparent
 
-h1,h2,h3,h4,h5
-	font-weight: 800
-	line-height: 1.1em
-
-h1
-	margin-bottom: 20px
-
+h1,
+h1 p
+	font-size: 114px
+	line-height: 0.98
+	+max-screen(1440px)
+		font-size: 92px
+	+max-screen(1200px)
+		font-size: 80px
+	+max-screen(768px)
+		font-size: 68px
+	+max-screen(576px)
+		font-size: 42px
+h2,
+h2 p
+	font-size: 80px
+	line-height: 1.05
+	+max-screen(1440px)
+		font-size: 64px
+	+max-screen(1200px)
+		font-size: 55px
+	+max-screen(768px)
+		font-size: 46px
+	+max-screen(576px)
+		font-size: 28px 
+h3,
+h3 p
+	font-size: 40px
+	line-height: 1
+	+max-screen(1440px)
+		font-size: 32px
+	+max-screen(1200px)
+		font-size: 27px
+	+max-screen(768px)
+		font-size: 22px
+	+max-screen(576px)
+		font-size: 18px
+h4,
+h4 p 
+	font-size: 27px
+	line-height: 1.4
+	+max-screen(1200px)
+		font-size: 22px
+	+max-screen(992px)
+		font-size: 20px
+	+max-screen(768px)
+		font-size: 18px
+	+max-screen(576px)
+		font-size: 16px
 p,.p
 	font-size: $default-font-size
 	line-height: 1.66
 	margin-bottom: 30px 
 	&:last-child
 		margin-bottom: 0
-	+max-screen($breakpoint-lg)
-		
-	+max-screen($breakpoint-md)
-		
-
+	+max-screen(992px)
+		font-size: 16px 
+	+max-screen(576px)
+		font-size: 14px	
+h1, h2, h3, h4 
+	font-weight: 400
+	p 
+		margin-bottom: 0
 .text
 	&--style
 	&--size--10,&--size--10 *
