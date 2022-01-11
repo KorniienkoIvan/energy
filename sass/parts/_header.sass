@@ -40,6 +40,8 @@
 			max-width: 200px
 		+max-screen(992px)
 			max-width: 160px
+		+min-screen(1921px)	
+			max-width: 360px
 	.social_media_wrapper
 		display: flex
 		padding-top: 10px 
@@ -62,6 +64,9 @@
 					+max-screen(992px)
 						width: 20px 
 						height: 20px 
+				+min-screen(1921px)
+					width: 40px 
+					height: 40px 
 	.menu 
 		display: flex 
 		padding-top: 8px
@@ -103,6 +108,8 @@
 				+max-screen(768px)
 					font-size: 24px
 					color: #121938
+				+min-screen(1921px)
+					font-size: 32px
 				&::after 
 					content: ""
 					height: 4px 

@@ -164,6 +164,7 @@
         margin-left: calc( (1230px - 100vw)/2 - 30px)
         margin-right: calc( (1230px - 100vw)/2 - 184px)
         margin-top: 125px
+        margin-bottom: -1px
         +max-screen(1230px)
             margin-left: -30px 
             margin-right: -184px
@@ -195,9 +196,8 @@
                 .right-col 
                     width: 100%
 .testimonial
-    min-height: 920px
     position: relative
-    padding-bottom: 42px
+    padding-bottom: 390px
     background: #00A684
     clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
     overflow: hidden
@@ -215,20 +215,23 @@
         color: #fff
         padding-top: 112px
         line-height: 1.44
-        +min-screen(1441px)
-            font-size: 43px
         +max-screen(992px)
             padding-top: 0
+        +min-screen(1441px)
+            font-size: 43px
+        +min-screen(1921px)
+            font-size: 50px
     &__author
         line-height: 1.55
     &__slider
         position: relative
         text-align: center
-        max-width: 1120px
         padding-left: 50px
         padding-right: 50px
         margin-left: auto 
         margin-right: auto
+        +min-screen(993px)
+            max-width: 55%
         .slick-track 
             display: flex
     &__content
