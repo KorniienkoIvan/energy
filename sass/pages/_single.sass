@@ -3,14 +3,25 @@
         .container 
             max-width: 1230px 
             padding-right: 184px
+            +max-screen(992px)
+                padding-right: 64px
             +max-screen(768px)
                 padding-right: 30px 
+            +min-screen(1921px)
+                max-width: 1530px
+                padding-right: 250px
         .right_side_image
             position: absolute
             right: 0
             top: 0
             width: 66.4%
+            +max-screen(1440px)
+                width: 70%
+            +max-screen(992px)
+                width: 75%
             +max-screen(768px)
+                width: 70%
+            +max-screen(576px)
                 width: 95%
             &::before 
                 content: ""
@@ -33,7 +44,11 @@
             background: #121938
             clip-path: polygon(0 0,100% 0,100% 0,0 100%)
             z-index: 1
+            +max-screen(992px)
+                width: 49%
             +max-screen(768px)
+                width: 50.7%
+            +max-screen(576px)
                 width: 70%
             &::before 
                 content: ""
@@ -45,6 +60,9 @@
             height: 24px
             margin-bottom: 82px
             margin-top: 70px
+            +max-screen(992px)
+                margin-top: 32px 
+                margin-bottom: 48px
             +max-screen(768px)
                 margin-bottom: 32px
                 margin-top: 24px 
@@ -81,8 +99,13 @@
             z-index: 2
     &__content 
         padding-top: 278px 
+        position: relative
+        +max-screen(992px)
+            padding-top: 30%
         +max-screen(768px)
-            padding-top: 112px
+            padding-top: 20%
+        +max-screen(576px)
+            padding-top: 40%
     &__logo 
         max-width: 77.54%
         margin-right: auto 
@@ -98,11 +121,18 @@
             display: block
             margin-left: auto 
             margin-right: auto
+            +max-screen(992px)
+                width: 170px 
             +max-screen(768px)
                 width: 120px 
+            +min-screen(1921px)
+                width: 250px 
     &__title 
         padding-top: 110px
-        margin-bottom: 44px
+        padding-bottom: 44px
+        +max-screen(992px)
+            padding-top: 48px 
+            padding-bottom: 32px
         +max-screen(768px)
             padding-top: 30px 
             margin-bottom: 24px
@@ -114,11 +144,16 @@
         +max-screen(1230px)
             margin-left: -30px
             margin-right: -184px
+        +max-screen(992px)
+            margin-right: -64px
         +max-screen(768px)
             margin-left: -30px 
             margin-right: -30px 
             margin-top: 32px 
             margin-bottom: 39px
+        +min-screen(1921px)
+            margin-left: calc( (1530px - 100vw)/2 - 30px)
+            margin-right: calc( (1530px - 100vw)/2 - 250px)
         .slick-track 
             max-height: 100%
         img 
@@ -132,8 +167,13 @@
         +max-screen(1230px)
             margin-left: -30px 
             margin-right: -184px
+        +max-screen(992px)
+            margin-right: -64px
         +max-screen(768px)
             margin-top: 25px
+        +min-screen(1921px)
+            margin-left: calc( (1530px - 100vw)/2 - 30px)
+            margin-right: calc( (1530px - 100vw)/2 - 250px)
         img
             width: 100% 
             object-fit: cover
@@ -162,19 +202,22 @@
     clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
     overflow: hidden
     margin-bottom: 42px
-    +max-screen(768px)
+    +max-screen(992px)
         min-height: auto 
+        clip-path: none
         margin-bottom: 0
+        padding-bottom: 144px
+        padding-top: 64px
+    +max-screen(768px)
         padding-bottom: 132px 
         padding-top: 48px
-        clip-path: none
     &__text 
         color: #fff
         padding-top: 112px
         line-height: 1.44
         +min-screen(1441px)
             font-size: 43px
-        +max-screen(768px)
+        +max-screen(992px)
             padding-top: 0
     &__author
         line-height: 1.55
