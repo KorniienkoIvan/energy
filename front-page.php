@@ -160,7 +160,7 @@
 	<?php if(have_rows('cards')): ?>
 		<div class="row home_page_cards">
 			<?php while(have_rows('cards')): the_row(); ?>
-				<div class="col-3 home_page_card">
+				<div class="col-lg-3 col-md-6 col-12 home_page_card">
 					<?php 
 						$image = get_sub_field('card_background_image');
 						$title = get_sub_field('card_title');
@@ -202,7 +202,7 @@
 							$name = get_sub_field('worker_name');
 							$position = get_sub_field('worker_position');
 						?>
-						<div class="contact__card col-4">
+						<div class="contact__card col-lg-4 col-12">
 							<div class="contact__card__image">
 								<div class="left_triangular"></div>
 								<img src="<?php if($image){echo $image['url'];}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt="">

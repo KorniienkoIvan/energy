@@ -84,6 +84,15 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+            },
+        ]
     });
 
     //Mobile Header 

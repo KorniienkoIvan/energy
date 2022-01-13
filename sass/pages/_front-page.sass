@@ -2,6 +2,8 @@
     background-color: #CA3240
     height: calc( 100vh - 90px )
     position: relative
+    +max-screen(768px) 
+        height: 85vh
     .background_image 
         position: absolute
         bottom: 11.2% 
@@ -10,6 +12,11 @@
         right: 4.79%
         background-color: #000000
         clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
+        +max-screen(768px)
+            clip-path: polygon(0% 0%,100% 0%,100% 100%,100% 100%)
+            left: 0
+            right: 0
+            bottom: 0
         &::after
             content: ""
             position: absolute
@@ -87,6 +94,8 @@
         margin-left: auto
         background: #fff
         clip-path: polygon(91.4% 0%,100% 0,100% 100%,0% 100%)
+        +max-screen(768px)
+            display: none
     .container 
         position: absolute 
         top: calc( 50% + 50px )
@@ -96,6 +105,9 @@
         padding-left: 110px 
         padding-right: 110px 
         max-width: 100%
+        +max-screen(768px)
+            padding-left: 20px 
+            padding-right: 20px
     h1 
         font-size: 150px
         line-height: 0.813
@@ -107,6 +119,7 @@
             font-size: 100px
         +max-screen(768px)
             font-size: 84px
+            margin-bottom: 24px
         +max-screen(576px)
             font-size: 50px
     &__subtitle
@@ -119,13 +132,21 @@
     background: #121938
     max-height: 90px
     overflow: hidden
+    +max-screen(768px)
+        overflow: visible
+        max-height: none
     .container
         max-width: 1560px 
         padding-left: 50px
         padding-right: 50px
+        +max-screen(768px)
+            padding-left: 0
+            padding-right: 0
     &__list 
         display: flex 
         justify-content: center
+        +max-screen(768px)
+            flex-direction: column
     &__item 
         width: 35%
         clip-path: polygon(0% 0%,82.5% 0%,100% 100%,17.5% 100%)
@@ -139,21 +160,44 @@
             display: flex 
             justify-content: center 
             align-items: center
+            +max-screen(768px)
+                height: 70px
+                font-size: 24px
+                padding-top: 10px
+                padding-bottom: 10px
         &:first-child
             background: #DE9919
             margin-right: -2%
+            +max-screen(768px)
+                margin-right: 0
         &:nth-child(2)
             background: #00A684
             margin-left: -1%
             margin-right: -1%
+            +max-screen(768px)
+                margin-left: 0
+                margin-right: 0
         &:last-child
             background: #94C8C6
             margin-left: -2%
+            +max-screen(768px)
+                margin-left: 1px
+        +max-screen(768px)
+            width: 84%
+            clip-path: polygon(9.5% 0,100% 0%,90.5% 100%,0% 100%)
+            margin-top: -1px
+            &:first-child
+                margin-left: auto 
+                margin-top: 0
+            &:nth-last-child(2)
+                margin-left: calc( 8% + 0.5px )
 .brand_experience
     position: relative
     padding-bottom: 112px
+    +max-screen(768px)
+        padding-bottom: 200px
     .background_triangular
-        width: 38.8% 
+        width: 76.5%
         background: #DE9919
         clip-path: polygon(0 0,100% 0,0% 100%,0 100%)
         position: absolute 
@@ -180,6 +224,8 @@
         margin-bottom: 134px
         max-width: 1350px 
         margin-right: auto
+        +max-screen(768px)
+            margin-bottom: 32px
         .top_triangular
             background: #DE9919
             width: 63px
@@ -197,27 +243,44 @@
             background: #E99C00
             width: 38.9%
             margin-left: auto 
+            +max-screen(768px)
+                height: 12px
+                margin-right: auto
+                margin-left: 0
     &__title 
         text-align: right
         margin-bottom: 24px
+        +max-screen(768px)
+            text-align: left
     &__subtitle 
         text-align: right
         max-width: 840px
         margin-left: auto
         margin-bottom: 34px 
+        +max-screen(768px)
+            text-align: left
     &__bottom 
         .container 
             max-width: 51.3%
             margin-left: 0 
             padding-left: 7.7%
             box-sizing: content-box
+            +max-screen(768px)
+                max-width: 100%
+                box-sizing: border-box
     &__content 
         display: flex 
+        +max-screen(768px)
+            flex-direction: column
         .left_column 
             width: 48.3%
+            +max-screen(768px)
+                width: 100%
         .right_column 
             width: 44.2%
             margin-left: auto 
+            +max-screen(768px)
+                width: 100%
     .bottom_background_triangular 
         width: calc(57.25% + 2px)
         position: absolute
@@ -400,6 +463,10 @@
         max-height: 165px
         width: 25% !important
         opacity: 0.5
+        +max-screen(768px)
+            opacity: 0 
+            &.slick-active 
+                opacity: 1
         &.slick-current
             opacity: 1
         img 
@@ -465,15 +532,26 @@
         padding-top: 164px
         padding-bottom: 25.6px
         background: #CA3240
+        +max-screen(768px)
+            padding-bottom: 48px
+            padding-top: 0
         .container 
             max-width: 1880px 
             padding-left: 50px 
             padding-right: 50px 
             display: flex 
             align-items: flex-end
+            +max-screen(768px)
+                flex-direction: column
+                align-items: center
+                text-align: center
         &__title 
             font-size: 114px
             line-height: 0.9824
+            +max-screen(768px)
+                font-size: 64px
+                margin-top: 32px
+                margin-bottom: 18px
         &__subtitle
             font-size: 30px
             line-height: 1.245
@@ -484,6 +562,8 @@
     background: #CA3240
     position: relative
     padding-bottom: 502px
+    +max-screen(768px)
+        padding-bottom: 96px
     &__cards_wrapper
         padding-top: 117px 
         padding-bottom: 177px
@@ -495,6 +575,8 @@
             top: 0
             left: 0
             background: #9ED2D0
+            +max-screen(768px)
+                height: calc(91.18% + 1px)
         .background_triangular
             height: 68.82%
             position: absolute
@@ -503,6 +585,8 @@
             bottom: 0
             background: #9ED2D0
             clip-path: polygon(0% 0%,102.47% 0,50% 100%,0 0)
+            +max-screen(768px)
+                height: 8.82%
     &__card 
         padding-left: 54.3px 
         padding-right: 54.3px 
@@ -510,6 +594,8 @@
         &__image 
             margin-bottom: 32.7px
             position: relative
+            img 
+                width: 100%
             .left_triangular
                 position: absolute
                 left: 0
@@ -548,7 +634,10 @@
     .container 
         max-width: 1708px 
         padding-left: 81px 
-        padding-right: 50px     
+        padding-right: 50px   
+        +max-screen(768px)
+            padding-left: 30px 
+            padding-right: 30px 
     &__title 
         font-size: 114px
         line-height: 98.24%
@@ -557,6 +646,13 @@
         right: 15%
         color: #fff
         letter-spacing: 19.5px
+        +max-screen(768px)
+            font-size: 54px
+            position: relative
+            top: auto 
+            right: auto
+            letter-spacing: 0
+            padding-bottom: 54px
         &::before 
             content: ""
             position: absolute
@@ -565,6 +661,10 @@
             width: 34.16%
             height: 24px
             background: #fff
+            +max-screen(768px)
+                height: 12px
+                left: 0 
+                bottom: 24px
         &Wrapper
             position: absolute
             left: 0
@@ -574,6 +674,14 @@
             height: 97%
             bottom: -22.2%
             clip-path: polygon(0 0,100% 51%,0% 100%,0% 0)
+            +max-screen(768px)
+                position: static 
+                background: transparent 
+                clip-path: none
+                padding-left: 30px 
+                padding-right: 30px 
+                padding-top: 48px 
+                width: 100%
     &__data 
         position: absolute
         left: 59%
@@ -581,6 +689,10 @@
         line-height: 1.2454
         right: 7.8%
         bottom: 307px
+        +max-screen(768px)
+            padding-left: 30px 
+            padding-right: 30px 
+            position: static
         * 
             color: #fff
         & > div 
