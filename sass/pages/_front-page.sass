@@ -112,6 +112,7 @@
         font-size: 150px
         line-height: 0.813
         color: #fff 
+        text-transform: uppercase
         max-width: 1052px 
         +max-screen(1440px)
             font-size: 120px
@@ -283,6 +284,8 @@
             margin-left: auto 
             +max-screen(768px)
                 width: 100%
+            +min-screen(769px)
+                padding-bottom: 180px
     .bottom_background_triangular 
         width: calc(57.25% + 2px)
         position: absolute
@@ -425,6 +428,7 @@
     &__content
         max-width: 560px
         margin-left: auto
+        padding-bottom: 42px
         &Wrapper 
             max-width: 944px
             margin-left: auto 
