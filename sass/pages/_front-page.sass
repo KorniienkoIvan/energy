@@ -313,6 +313,9 @@
         padding-bottom: 103px
         position: relative
         margin-top: -1px
+        +max-screen(768px)
+            padding-top: 25vw 
+            padding-bottom: 64px
         &__title 
             color: #fff 
             text-align: right
@@ -352,8 +355,9 @@
                 z-index: 2
     &__main 
         position: relative
-        .left_triangular_image
-            position: absolute
+        +max-screen(768px)
+            flex-direction: column
+            display: flex
         &__content 
             text-align: right
             max-width: 722px
@@ -361,16 +365,24 @@
         &__title
             margin-bottom: 39px
             padding-top: 58.3px 
+            +max-screen(768px)
+                margin-bottom: 28px 
         &__text
             width: 81.3%
             margin-left: auto 
             margin-top: 53.6px
             padding-bottom: 88px
+            +max-screen(768px)
+                width: 100% 
+                margin-top: 24px 
+                padding-bottom: 32px
         .separator
             height: 24px 
             background: #00A684
             width: 43.6%
             margin-left: auto 
+            +max-screen(768px)
+                height: 12px
         .left_triangular_image
             background: #333333
             width: 37.29%
@@ -387,6 +399,24 @@
                 transform: translateY(-50%)
                 width: 97.625%
                 margin-left: -34px
+            +max-screen(768px)
+                order: 2
+                margin-bottom: 64px
+                position: static
+                transform: none 
+                padding-left: 30px 
+                padding-right: 30px 
+                clip-path: none 
+                width: 100%
+                background: transparent
+                &::before 
+                    content: none
+                img 
+                    margin-left: 0
+                    position: static
+                    width: 100% 
+                    transform: none
+
 .digital_experience 
     position: relative
     .container
