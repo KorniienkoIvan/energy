@@ -17,15 +17,18 @@
 		<?php if($subtitle): ?><div class="hero_block__subtitle"><?php echo $subtitle; ?></div><?php endif; ?>
 	</div>
 </section>
-<section class="anchor_links_line">
-	<div class="container">
-		<ul class="anchor_links_line__list">
-			<li class="anchor_links_line__item"><a href="#">Brand Experiences</a></li>
-			<li class="anchor_links_line__item"><a href="#">Experiential OOH</a></li>
-			<li class="anchor_links_line__item"><a href="#">Digital Experiences</a></li>
-		</ul>
-	</div>
-</section>
+<?php if(have_rows('links')): ?>
+	<section class="anchor_links_line">
+		<div class="container">
+			<ul class="anchor_links_line__list">
+				<?php while(have_rows('links')): the_row(); ?>
+					<?php $link = get_sub_field('link'); ?>
+					<li class="anchor_links_line__item"><a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a></li>
+				<?php endwhile; ?>
+			</ul>
+		</div>
+	</section>
+<?php endif; ?>
 <?php $id = get_field('brand_experience_block_id'); ?>
 <section class="brand_experience" id="<?php echo $id; ?>">
 	<div class="background_triangular"></div>
