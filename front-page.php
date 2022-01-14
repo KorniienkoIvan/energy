@@ -26,7 +26,8 @@
 		</ul>
 	</div>
 </section>
-<section class="brand_experience">
+<?php $id = get_field('brand_experience_block_id'); ?>
+<section class="brand_experience" id="<?php echo $id; ?>">
 	<div class="background_triangular"></div>
 	<div class="brand_experience__line"></div>
 	<div class="brand_experience__top">
@@ -72,7 +73,8 @@
 		<img src="<?php if($image){echo $image;}else{ echo get_template_directory_uri() . '/assets/images/brand-experience-background-triangular.png';} ?>" alt="">
 	</div>
 </section>
-<section class="experimental">
+<?php $id = get_field('experimantal_ooh_block_id'); ?>
+<section class="experimental" id="<?php echo $id; ?>">
 	<div class="experimental__header">
 		<div class="experimental__header__triangular"></div>
 		<div class="experimental__header__line"></div>
@@ -110,7 +112,8 @@
 		</div>
 	</div>
 </section>
-<section class="digital_experience">
+<?php $id = get_field('digital_experience_block_id'); ?>
+<section class="digital_experience" id="<?php echo $id; ?>">
 	<div class="top_triangular"></div>
 	<div class="right_triangular"></div>
 	<?php 
@@ -147,8 +150,9 @@
 		<img src="<?php if($right_image){echo $right_image;}else{ echo get_template_directory_uri() . '/assets/images/OPEE05.jpg';} ?>" alt="">
 	</div>
 </section>
+<?php $id = get_field('slider_block_id'); ?>
 <?php if(have_rows('brand_slider')): ?>
-<section class="brands_line">
+<section class="brands_line" id="<?php echo $id; ?>">
 	<div class="brands_line__slider">
 		<?php while(have_rows('brand_slider')): the_row(); ?>
 			<div class="brands_line__item"><img src="<?php the_sub_field('brand_image') ?>" alt=""></div>
@@ -156,7 +160,8 @@
 	</div>
 </section>
 <?php endif; ?>
-<section class="home_page_cards_wrapper">
+<?php $id = get_field('cards_block_id'); ?>
+<section class="home_page_cards_wrapper" id="<?php echo $id; ?>">
 	<?php if(have_rows('cards')): ?>
 		<div class="row home_page_cards">
 			<?php while(have_rows('cards')): the_row(); ?>
@@ -189,7 +194,8 @@
 		</div>
 	<?php endif; ?>
 </section>
-<section class="contact">
+<?php $id = get_field('staff_block_id'); ?>
+<section class="contact" id="<?php echo $id; ?>">
 	<?php if(have_rows('staff')): ?>
 		<div class="contact__cards_wrapper">
 			<div class="background_rectangle"></div>
