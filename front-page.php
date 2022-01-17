@@ -168,7 +168,7 @@
 <?php $id = get_field('cards_block_id'); ?>
 <section class="home_page_cards_wrapper" id="<?php echo $id; ?>">
 	<?php if(have_rows('cards')): ?>
-		<div class="row home_page_cards" id="work">
+		<div class="row home_page_cards">
 			<?php $i = 0; ?>
 			<?php while(have_rows('cards')): the_row(); ?>
 				<div class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
