@@ -8,6 +8,16 @@
 
 	<?php the_field('header_scripts','option'); ?>
 </head>
+<?php if(!is_front_page()){ ?>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('ul.menu li.anchor_link').each(function(){
+				var link = jQuery(this).find('a').attr('href');
+				jQuery(this).find('a').attr('href', '<?php echo get_home_url() ?>/' + link);
+			});
+		});
+	</script>
+<?php } ?>
 
 <?php 
 	$headerClasses = '';
