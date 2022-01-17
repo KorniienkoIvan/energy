@@ -211,7 +211,7 @@
 							$name = get_sub_field('worker_name');
 							$position = get_sub_field('worker_position');
 						?>
-						<div class="contact__card col-lg-4 col-12">
+						<div class="contact__card col-lg-4 col-md-6 col-12">
 							<div class="contact__card__image">
 								<div class="left_triangular"></div>
 								<img src="<?php if($image){echo $image['url'];}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt="">

@@ -86,7 +86,7 @@ $(document).ready(function(){
         centerMode: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1
@@ -99,4 +99,10 @@ $(document).ready(function(){
     $('.header .mobile_burger_icon').click(function(){
         $('.header').toggleClass('open');
     });
+});
+$(window).on('load', function(){
+    var height = $('.experimental .experimental__main').height() + 26;
+    $('.experimental .left_triangular_image').prependTo('.experimental .experimental__main .container');
+    $('.experimental .left_triangular_image').css('height', height);
+
 });

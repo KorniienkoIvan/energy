@@ -140,7 +140,7 @@
         max-width: 1560px 
         padding-left: 50px
         padding-right: 50px
-        +max-screen(768px)
+        +max-screen(992px)
             padding-left: 0
             padding-right: 0
     &__list 
@@ -161,6 +161,11 @@
             display: flex 
             justify-content: center 
             align-items: center
+            +max-screen(992px)
+                height: 64px 
+                font-size: 20px 
+                padding-top: 12px 
+                padding-bottom: 12px
             +max-screen(768px)
                 height: 70px
                 font-size: 24px
@@ -196,7 +201,7 @@
     position: relative
     padding-bottom: 112px
     +max-screen(768px)
-        padding-bottom: 200px
+        padding-bottom: 53vw
     .background_triangular
         width: 38.8%
         background: #DE9919
@@ -227,6 +232,8 @@
         margin-bottom: 134px
         max-width: 1350px 
         margin-right: auto
+        +max-screen(992px)
+            margin-bottom: 48px
         +max-screen(768px)
             margin-bottom: 32px
         .top_triangular
@@ -241,6 +248,10 @@
             margin-left: auto
             margin-right: 0
             padding-right: 0
+            +max-screen(992px)
+                +min-screen(769px)
+                    padding-right: 30px 
+
         .separator 
             height: 24px 
             background: #E99C00
@@ -268,9 +279,13 @@
             margin-left: 0 
             padding-left: 7.7%
             box-sizing: content-box
+            +max-screen(992px)
+                box-sizing: border-box
+                padding-left: 30px 
+                padding-right: 30px 
+                max-width: 100%
             +max-screen(768px)
                 max-width: 100%
-                box-sizing: border-box
     &__content 
         display: flex 
         +max-screen(768px)
@@ -362,6 +377,9 @@
             text-align: right
             max-width: 722px
             margin-left: auto
+            +max-screen(992px)
+                +min-screen(769px)
+                    max-width: 100%
         &__title
             margin-bottom: 39px
             padding-top: 58.3px 
@@ -372,8 +390,9 @@
             margin-left: auto 
             margin-top: 53.6px
             padding-bottom: 88px
+            +max-screen(992px)
+                width: 100%
             +max-screen(768px)
-                width: 100% 
                 margin-top: 24px 
                 padding-bottom: 32px
         .separator
@@ -393,12 +412,28 @@
                 content: ""
                 display: block
                 padding-bottom: 200%
+                +max-screen(992px)
+                    +min-screen(769px)
+                        content: none
             img 
                 position: absolute
                 top: 46.5%
                 transform: translateY(-50%)
                 width: 97.625%
                 margin-left: -34px
+            +max-screen(992px)
+                +min-screen(769px)
+                    float: left 
+                    position: static
+                    top: 0
+                    shape-outside: polygon(0% 0%,100% 50%,0% 100%,0% 0)
+                    display: flex 
+                    align-items: center
+                    margin-left: -30px
+                    img 
+                        transform: none
+                        position: static 
+                        top: 0
             +max-screen(768px)
                 order: 2
                 margin-bottom: 64px
@@ -419,17 +454,24 @@
 
 .digital_experience 
     position: relative
+    +max-screen(992px)
+        +min-screen(769px)
+            display: flex 
+            flex-wrap: wrap
     .container
         max-width: 1260px
         padding-left: 50px 
         padding-right: 50px 
-        +max-screen(768px)
+        +max-screen(992px)
             padding-left: 30px 
             padding-right: 30px
     &__title 
         line-height: 1.1625
         margin-bottom: 82px
         padding-top: 97px
+        +max-screen(992px)
+            margin-bottom: 48px
+            padding-top: 64px
         +max-screen(768px)
             margin-bottom: 32px
             padding-top: 42px
@@ -445,13 +487,15 @@
     &__subtitle 
         margin-bottom: 38px 
         margin-right: 5px
-        +max-screen(768px)
+        +max-screen(992px)
             margin-bottom: 24px
     .separator 
         height: 24px 
         width: 41.8%
         background: #fff 
         margin-bottom: 40px
+        +max-screen(992px)
+            margin-bottom: 32px
         +max-screen(768px)
             height: 12px
             margin-bottom: 24px
@@ -459,13 +503,15 @@
         max-width: 560px
         margin-left: auto
         padding-bottom: 42px
+        +max-screen(992px)
+            max-width: 100%
         &Wrapper 
             max-width: 944px
             margin-left: auto 
     &__text 
         padding-bottom: 422px
-        +max-screen(768px)
-            padding-bottom: 64px
+        +max-screen(992px)
+            padding-bottom: 0
     .top_triangular
         position: absolute
         left: 0
@@ -475,7 +521,7 @@
         clip-path: polygon(100% 0,100% 57.32%,68.78% 100%,0% 0%)
         width: 100%
         z-index: -1
-        +max-screen(768px)
+        +max-screen(992px)
             clip-path: none
     .bottom_left_image 
         position: absolute
@@ -484,6 +530,15 @@
         width: 68.49%
         height: 62%
         z-index: -2
+        +max-screen(992px)
+            +min-screen(769px)
+                width: 50% 
+                padding-left: 30px 
+                padding-right: 15px 
+                margin-bottom: 64px
+                height: auto
+                z-index: 1
+                position: static
         +max-screen(768px)
             width: 100%
         img
@@ -502,6 +557,15 @@
         width: 34.32%
         height: 45.93%
         z-index: -3
+        +max-screen(992px)
+            +min-screen(769px)
+                padding-right: 30px 
+                padding-left: 15px 
+                margin-bottom: 64px 
+                width: 50%
+                height: auto 
+                z-index: 1
+                position: static
         +max-screen(768px)
             width: 100%
         img
@@ -523,6 +587,10 @@
         margin-right: auto
         padding-top: 70px
         padding-bottom: 70px
+        +max-screen(768px)
+            max-width: 100% 
+            padding-top: 24px
+            padding-bottom: 24px
         .slick-track
             display: flex 
             justify-content: center
@@ -582,6 +650,12 @@
         font-size: 60px
         line-height: 1
         position: relative
+        +max-screen(1440px)
+            font-size: 48px
+        +max-screen(1200px)
+            font-size: 42px
+        +max-screen(768px)
+            font-size: 34px
         &::after 
             content: ""
             width: 63.54%
@@ -591,14 +665,25 @@
             position: absolute
             left: 50% 
             transform: translateX(-50%)
+            +max-screen(768px)
+                width: 40%
     &__subtitle 
         font-size: 32px
         line-height: 1.875
+        +max-screen(1440px)
+            font-size: 26px
+        +max-screen(1200px)
+            font-size: 22px
+        +max-screen(768px)
+            font-size: 18px
     &s_bottom 
         color: #fff 
         padding-top: 164px
         padding-bottom: 25.6px
         background: #CA3240
+        +max-screen(992px)
+            padding-top: 72px 
+            padding-bottom: 64px
         +max-screen(768px)
             padding-bottom: 48px
             padding-top: 0
@@ -608,6 +693,12 @@
             padding-right: 50px 
             display: flex 
             align-items: flex-end
+            +max-screen(992px)
+                flex-direction: column
+                align-items: center 
+                text-align: center
+                padding-left: 30px 
+                padding-right: 30px
             +max-screen(768px)
                 flex-direction: column
                 align-items: center
@@ -617,14 +708,18 @@
         &__title 
             font-size: 114px
             line-height: 0.9824
-            +max-screen(768px)
+            +max-screen(992px)
                 font-size: 64px
+            +max-screen(768px)
+                font-size: 42px
                 margin-top: 32px
                 margin-bottom: 18px
         &__subtitle
             font-size: 30px
             line-height: 1.245
             margin-left: -5px
+            +max-screen(992px)
+                font-size: 24px
             +max-screen(768px)
                 font-size: 20px
     &s_wrapper 
@@ -646,6 +741,8 @@
             top: 0
             left: 0
             background: #9ED2D0
+            +max-screen(992px)
+                height: calc(83.18% + 1px)
             +max-screen(768px)
                 height: calc(91.18% + 1px)
         .background_triangular
@@ -656,6 +753,8 @@
             bottom: 0
             background: #9ED2D0
             clip-path: polygon(0% 0%,102.47% 0,50% 100%,0 0)
+            +max-screen(992px)
+                height: 16.82%
             +max-screen(768px)
                 height: 8.82%
     &__card 
@@ -725,6 +824,11 @@
         right: 15%
         color: #fff
         letter-spacing: 19.5px
+        +max-screen(992px)
+            font-size: 56px
+            letter-spacing: 0
+            top: 18% 
+            right: 26%
         +max-screen(768px)
             font-size: 54px
             position: relative
@@ -740,6 +844,9 @@
             width: 34.16%
             height: 24px
             background: #fff
+            +max-screen(992px)
+                bottom: -32px
+                height: 12px
             +max-screen(768px)
                 height: 12px
                 left: 0 
@@ -753,6 +860,9 @@
             height: 97%
             bottom: -22.2%
             clip-path: polygon(0 0,100% 51%,0% 100%,0% 0)
+            +max-screen(992px)
+                clip-path: polygon(0 0,100% 19%,0 100%,0 0)
+                height: 61%
             +max-screen(768px)
                 position: static 
                 background: transparent 
@@ -768,6 +878,11 @@
         line-height: 1.2454
         right: 7.8%
         bottom: 307px
+        +max-screen(992px)
+            right: 2.8% 
+            bottom: 12%
+            left: 57%
+            font-size: 26px
         +max-screen(768px)
             padding-left: 30px 
             padding-right: 30px 
@@ -781,6 +896,8 @@
                 margin-bottom: 0
             &.contact__data__phone 
                 margin-bottom: 0
+            +max-screen(992px)
+                margin-bottom: 28px
             +max-screen(768px)
                 margin-bottom: 28px
         &__google-maps
