@@ -13,17 +13,19 @@
 	<div class="background_lines1"></div>
 	<div class="background_lines2"></div>
 	<div class="container">
-		<?php if($title): ?><h1 class="hero_block__title"><?php echo $title; ?></h1><?php endif; ?>
-		<?php if($subtitle): ?><div class="hero_block__subtitle"><?php echo $subtitle; ?></div><?php endif; ?>
+		<?php if($title): ?><h1 class="hero_block__title appear fade-right"><?php echo $title; ?></h1><?php endif; ?>
+		<?php if($subtitle): ?><div class="hero_block__subtitle appear fade-right delay-1"><?php echo $subtitle; ?></div><?php endif; ?>
 	</div>
 </section>
 <?php if(have_rows('links')): ?>
 	<section class="anchor_links_line">
 		<div class="container">
 			<ul class="anchor_links_line__list">
+				<?php $i = 0; ?>
 				<?php while(have_rows('links')): the_row(); ?>
 					<?php $link = get_sub_field('link'); ?>
-					<li class="anchor_links_line__item"><a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a></li>
+					<li class="anchor_links_line__item appear fade-in delay-<?php echo $i; ?>"><a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a></li>
+					<?php $i++; ?>
 				<?php endwhile; ?>
 			</ul>
 		</div>
@@ -44,19 +46,19 @@
 			?>
 			<div class="top_triangular"></div>
 			<?php if($title): ?>
-				<h2 class="brand_experience__title">
+				<h2 class="brand_experience__title appear fade-left">
 					<?php echo $title; ?>
 				</h2>
 			<?php endif; ?>
 			<?php if($subtitle): ?>
-				<h3 class="brand_experience__subtitle">
+				<h3 class="brand_experience__subtitle appear fade-left delay-1">
 					<?php echo $subtitle; ?>
 				</h3>
 			<?php endif; ?>
 			<div class="separator"></div>
 		</div>
 	</div>
-	<div class="brand_experience__bottom">
+	<div class="brand_experience__bottom appear fade-in delay-2">
 		<div class="container">
 			<div class="brand_experience__content">
 				<?php if($left_col_text): ?>
@@ -89,25 +91,25 @@
 		?>
 		<div class="container">
 			<?php if($header_title): ?>
-				<h2 class="experimental__header__title">
+				<h2 class="experimental__header__title appear fade-left">
 					<?php echo $header_title; ?>
 				</h2>
 			<?php endif; ?>
 		</div>
 	</div>
 	<div class="experimental__main">
-		<div class="left_triangular_image">
+		<div class="left_triangular_image appear fade-right delay-1">
 			<img src="<?php if($image){echo $image;}else{echo get_template_directory_uri() . '/assets/images/experimental__main_left_triangular_image.png';} ?>" alt="">
 		</div>
 		<div class="experimental__main__line"></div>
 		<div class="container">
 			<div class="experimental__main__content">
 				<?php if($title): ?>
-					<h3 class="experimental__main__title"><?php echo $title; ?></h3>
+					<h3 class="experimental__main__title appear fade-left delay-2"><?php echo $title; ?></h3>
 				<?php endif; ?>
 				<div class="separator"></div>
 				<?php if($text): ?>
-					<div class="experimental__main__text">
+					<div class="experimental__main__text appear fade-left delay-3">
 						<?php echo $text; ?>
 					</div>
 				<?php endif; ?>
@@ -129,27 +131,27 @@
 	<div class="container">
 		<div class="digital_experience__contentWrapper">
 			<?php if($title): ?>
-				<h2 class="digital_experience__title">
+				<h2 class="digital_experience__title appear fade-right">
 					<?php echo $title; ?>
 				</h2>
 			<?php endif; ?>
 			<div class="digital_experience__content">
 				<?php if($subtitle): ?>
-					<h3 class="digital_experience__subtitle">
+					<h3 class="digital_experience__subtitle appear fade-right delay-1">
 						<?php echo $subtitle; ?>
 					</h3>
 				<?php endif; ?>
 				<div class="separator"></div>
 				<?php if($text): ?>
-					<div class="digital_experience__text"><?php echo $text; ?></div>
+					<div class="digital_experience__text appear fade-right delay-2"><?php echo $text; ?></div>
 				<?php endif; ?>
 			</div>
 		</div>
 	</div>
-	<div class="bottom_left_image">
+	<div class="bottom_left_image appear fade-right delay-3">
 		<img src="<?php if($left_image){echo $left_image;}else{echo get_template_directory_uri() . '/assets/images/OPEE04.jpg';} ?>" alt="">
 	</div>
-	<div class="bottom_right_image">
+	<div class="bottom_right_image appear fade-left delay-3">
 		<img src="<?php if($right_image){echo $right_image;}else{ echo get_template_directory_uri() . '/assets/images/OPEE05.jpg';} ?>" alt="">
 	</div>
 </section>
@@ -167,8 +169,9 @@
 <section class="home_page_cards_wrapper" id="<?php echo $id; ?>">
 	<?php if(have_rows('cards')): ?>
 		<div class="row home_page_cards">
+			<?php $i = 0; ?>
 			<?php while(have_rows('cards')): the_row(); ?>
-				<div class="col-lg-3 col-md-6 col-12 home_page_card">
+				<div class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
 					<?php 
 						$image = get_sub_field('card_background_image');
 						$title = get_sub_field('card_title');
@@ -181,6 +184,7 @@
 					</div>
 					<div class="left_triangular"></div>		
 				</div>
+				<?php $i++; ?>
 			<?php endwhile; ?>
 		</div>
 	<?php endif; ?>
@@ -191,8 +195,8 @@
 	<?php if($left_text || $right_text): ?>
 		<div class="home_page_cards_bottom">
 			<div class="container">
-				<?php if($left_text): ?><div class="home_page_cards_bottom__title"><?php echo $left_text; ?></div><?php endif; ?>
-				<?php if($right_text): ?><div class="home_page_cards_bottom__subtitle"><?php echo $right_text; ?></div><?php endif; ?>
+				<?php if($left_text): ?><div class="home_page_cards_bottom__title appear fade-right delay-2"><?php echo $left_text; ?></div><?php endif; ?>
+				<?php if($right_text): ?><div class="home_page_cards_bottom__subtitle appear fade-left delay-2"><?php echo $right_text; ?></div><?php endif; ?>
 			</div>
 		</div>
 	<?php endif; ?>
@@ -205,13 +209,14 @@
 			<div class="background_triangular"></div>
 			<div class="container">
 				<div class="contact__cards row">
+					<?php $i = 0; ?>
 					<?php while(have_rows('staff')): the_row(); ?>
 						<?php 
 							$image = get_sub_field('worker_image'); 
 							$name = get_sub_field('worker_name');
 							$position = get_sub_field('worker_position');
 						?>
-						<div class="contact__card col-lg-4 col-md-6 col-12">
+						<div class="contact__card col-lg-4 col-md-6 col-12 appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s">
 							<div class="contact__card__image">
 								<div class="left_triangular"></div>
 								<img src="<?php if($image){echo $image['url'];}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt="">
@@ -219,6 +224,7 @@
 							<?php if($name): ?><div class="contact__card__name"><?php echo $name; ?></div><?php endif; ?>
 							<?php if($position): ?><div class="contact__card__position"><?php echo $position; ?></div><?php endif; ?>
 						</div>
+						<?php $i++; ?>
 					<?php endwhile; ?>
 				</div>
 			</div>
@@ -233,12 +239,12 @@
 	?>
 	<?php if($left_side_title): ?>
 		<div class="contact__titleWrapper">
-			<div class="contact__title">
+			<div class="contact__title appear fade-right delay-2">
 				<?php echo $left_side_title; ?>
 			</div>
 		</div>
 	<?php endif; ?>
-	<div class="contact__data">
+	<div class="contact__data appear fade-left delay-2">
 		<?php if($contact_text): ?><div class="contact__data__text"><?php echo $contact_text; ?></div><?php endif; ?>
 		<?php if($contact_phone): ?><div class="contact__data__phone">T: <a href="<?php echo $contact_phone; ?>"><?php echo $contact_phone['title']; ?></a></div><?php endif; ?>
 		<?php if($contact_email): ?><div class="contact__data__email">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>

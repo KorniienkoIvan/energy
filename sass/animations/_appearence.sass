@@ -15,7 +15,8 @@ body
 		opacity: 1
 
 .fade-in
-	transition: opacity 0.7s ease-out 0s
+	transition: opacity 0.7s ease-out
+	transition-delay: 0s
 	opacity: 0
 	&.visible
 		opacity: 1
@@ -34,7 +35,21 @@ body
 .fade-right 
 	opacity: 0 
 	transform: translateX(-30px)
-	transition: .3s 
+	transition-duration: .4s 
 	&.visible
 		opacity: 1
-		transition: translateX(0)
+		transform: translateX(0)
+.fade-left 
+	opacity: 0 
+	transform: translateX(30px)
+	transition-duration: .4s 
+	&.visible
+		opacity: 1
+		transform: translateX(0)
+.fade-bottom 
+	opacity: 0 
+	transform: translateY(-30px)
+	transition-duration: .4s 
+	&.visible
+		opacity: 1
+		transform: translateY(0)

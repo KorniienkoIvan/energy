@@ -58,7 +58,9 @@
 						$link = get_sub_field('social_media_link'); 
 						$image = get_sub_field('social_media_icon');
 					?>
-					<a href="<?php echo $link; ?>" class="social_media"><img src="<?php echo $image; ?>" alt=""></a>
+					<a href="<?php echo $link; ?>" class="social_media">
+						<?php echo file_get_contents(wp_get_original_image_path($image['id'])); ?>
+					</a>
 				<?php endwhile; ?>
 			</div>
 		<?php endif; ?>
