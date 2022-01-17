@@ -168,7 +168,7 @@
 <?php $id = get_field('cards_block_id'); ?>
 <section class="home_page_cards_wrapper" id="<?php echo $id; ?>">
 	<?php if(have_rows('cards')): ?>
-		<div class="row home_page_cards">
+		<div class="row home_page_cards" id="work">
 			<?php $i = 0; ?>
 			<?php while(have_rows('cards')): the_row(); ?>
 				<div class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
@@ -204,7 +204,7 @@
 <?php $id = get_field('staff_block_id'); ?>
 <section class="contact" id="<?php echo $id; ?>">
 	<?php if(have_rows('staff')): ?>
-		<div class="contact__cards_wrapper">
+		<div class="contact__cards_wrapper" id="people">
 			<div class="background_rectangle"></div>
 			<div class="background_triangular"></div>
 			<div class="container">
@@ -244,7 +244,7 @@
 			</div>
 		</div>
 	<?php endif; ?>
-	<div class="contact__data appear fade-left delay-2">
+	<div class="contact__data appear fade-left delay-2" id="contact">
 		<?php if($contact_text): ?><div class="contact__data__text"><?php echo $contact_text; ?></div><?php endif; ?>
 		<?php if($contact_phone): ?><div class="contact__data__phone">T: <a href="<?php echo $contact_phone; ?>"><?php echo $contact_phone['title']; ?></a></div><?php endif; ?>
 		<?php if($contact_email): ?><div class="contact__data__email">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>
