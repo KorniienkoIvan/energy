@@ -101,8 +101,10 @@ $(document).ready(function(){
     });
 });
 $(window).on('load', function(){
-    var height = $('.experimental .experimental__main').height() + 26;
-    $('.experimental .left_triangular_image').prependTo('.experimental .experimental__main .container');
-    $('.experimental .left_triangular_image').css('height', height);
-
+    var w = $(window).width();
+    if(w < 992 && w > 769) {
+        var height = $('.experimental .experimental__main').height() + 26;
+        $('.experimental .left_triangular_image').prependTo('.experimental .experimental__main .container');
+        $('.experimental .left_triangular_image').css('height', height);
+    }
 });
