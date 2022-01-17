@@ -19,9 +19,9 @@ Template Name: Single page
                 $header_title = get_field('single_header_title');
                 $header_content = get_field('single_header_content');
             ?>
-            <?php if($header_logo): ?><div class="single-page__logo"><img src="<?php echo $header_logo; ?>" alt=""></div><?php endif; ?>
-            <?php if($header_title): ?><h2 class="single-page__title"><?php echo $header_title; ?></h2><?php endif; ?>
-            <?php if($header_content): ?><h3 class="single-page__subtitle"><?php echo $header_content; ?></h3><?php endif; ?>
+            <?php if($header_logo): ?><div class="single-page__logo appear fade-right"><img src="<?php echo $header_logo; ?>" alt=""></div><?php endif; ?>
+            <?php if($header_title): ?><h2 class="single-page__title appear fade-right delay-1"><?php echo $header_title; ?></h2><?php endif; ?>
+            <?php if($header_content): ?><h3 class="single-page__subtitle appear fade-right delay-2"><?php echo $header_content; ?></h3><?php endif; ?>
             <div class="separator"></div>
             <?php 
                 $challenge_title = get_field('challenge_title');
@@ -29,19 +29,21 @@ Template Name: Single page
                 $challenge_right_column = get_field('challenge_right_column');
             ?>
             <div class="single-page__additional-text">
-                <?php if($challenge_title): ?><h3 class="title"><?php echo $challenge_title; ?></h3><?php endif; ?>
+                <?php if($challenge_title): ?><h3 class="title appear fade-bottom"><?php echo $challenge_title; ?></h3><?php endif; ?>
                 <?php if($challenge_left_column || $challenge_right_column): ?>
                     <div class="text">
-                        <div class="left-col"><?php echo $challenge_left_column; ?></div>
-                        <div class="right-col"><?php echo $challenge_right_column; ?></div>
+                        <div class="left-col appear fade-right delay-1"><?php echo $challenge_left_column; ?></div>
+                        <div class="right-col appear fade-left delay-1"><?php echo $challenge_right_column; ?></div>
                     </div>
                 <?php endif; ?>
             </div>
             <?php $gallery = get_field('post_gallery'); ?>
             <?php if($gallery): ?>
                 <div class="single-page__slider">
+                    <?php $i = 0; ?>
                     <?php foreach($gallery as $gallery_item): ?>
-                        <img src="<?php echo $gallery_item['url']; ?>" alt="">
+                        <img src="<?php echo $gallery_item['url']; ?>" class="appear fade-bottom" alt="" style="transition-delay: 0.<?php echo $i; ?>s">
+                        <?php $i++; ?>
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
@@ -51,11 +53,11 @@ Template Name: Single page
                 $results_right_column = get_field('results_right_column');
             ?>
             <div class="single-page__additional-text">
-                <?php if($results_title): ?><h3 class="title"><?php echo $results_title; ?></h3><?php endif; ?>
+                <?php if($results_title): ?><h3 class="title appear fade-bottom"><?php echo $results_title; ?></h3><?php endif; ?>
                 <?php if($results_left_column || $results_right_column): ?>
                     <div class="text">
-                        <div class="left-col"><?php echo $results_left_column; ?></div>
-                        <div class="right-col"><?php echo $results_right_column; ?></div>
+                        <div class="left-col appear fade-right delay-1"><?php echo $results_left_column; ?></div>
+                        <div class="right-col appear fade-left delay-1"><?php echo $results_right_column; ?></div>
                     </div>
                 <?php endif; ?>
             </div>
