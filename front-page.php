@@ -216,7 +216,7 @@
 							$name = get_sub_field('worker_name');
 							$position = get_sub_field('worker_position');
 						?>
-						<div class="contact__card col-lg-4 col-md-6 col-12 appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s">
+						<div class="contact__card col-lg-4 col-md-6 col-12" style="transition-delay: 0.<?php echo $i; ?>s">
 							<div class="contact__card__image">
 								<div class="left_triangular"></div>
 								<img src="<?php if($image){echo $image['url'];}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt="">
@@ -238,8 +238,8 @@
 		$google_map = get_field('google_map');
 	?>
 	<?php if($left_side_title): ?>
-		<div class="contact__titleWrapper">
-			<div class="contact__title appear fade-right delay-2">
+		<div class="contact__titleWrapper appear fade-right delay-2">
+			<div class="contact__title">
 				<?php echo $left_side_title; ?>
 			</div>
 		</div>

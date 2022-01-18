@@ -107,4 +107,5 @@ $(window).on('load', function(){
         $('.experimental .left_triangular_image').prependTo('.experimental .experimental__main .container');
         $('.experimental .left_triangular_image').css('height', height);
     }
+    jQuery('.contact__titleWrapper').css('bottom', '-22.2%');
 });
