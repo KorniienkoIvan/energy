@@ -13,6 +13,12 @@
         right: 4.79%
         background-color: #000000
         clip-path: polygon(0 0,100% 0,100% 0,50% 100%)
+        +max-screen(992px)
+            +min-screen(769px)
+                left: 0
+                right: 0
+                bottom: 0
+                clip-path: polygon(0 0,100% 0,100% 100%,93.45% 100%)
         +max-screen(768px)
             clip-path: polygon(0% 0%,100% 0%,100% 100%,100% 100%)
             left: 0
@@ -36,6 +42,9 @@
             margin-left: auto 
             margin-right: auto
             position: relative
+            +max-screen(992px)
+                +min-screen(769px)
+                    max-width: 100%
         .img_arrow 
             background: #fff
             width: 5.86%
@@ -95,6 +104,9 @@
         margin-left: auto
         background: #fff
         clip-path: polygon(91.4% 0%,100% 0,100% 100%,0% 100%)
+        +max-screen(992px)
+            +min-screen(769px)
+                display: none
         +max-screen(768px)
             display: none
     .container 
@@ -106,6 +118,9 @@
         padding-left: 110px 
         padding-right: 110px 
         max-width: 100%
+        +max-screen(992px)
+            padding-left: 30px 
+            padding-right: 30px 
         +max-screen(768px)
             padding-left: 20px 
             padding-right: 20px
@@ -280,6 +295,9 @@
             margin-left: 0 
             padding-left: 7.7%
             box-sizing: content-box
+            +max-screen(1200px)
+                +min-screen(993px)
+                    max-width: 80%
             +max-screen(992px)
                 box-sizing: border-box
                 padding-left: 30px 
@@ -298,9 +316,15 @@
         .right_column 
             width: 44.2%
             margin-left: auto 
+            +max-screen(1200px)
+                +min-screen(993px)
+                    padding-bottom: 32vw
             +max-screen(768px)
                 width: 100%
-            +min-screen(769px)
+            +max-screen(992px)
+                +min-screen(769px)
+                    padding-bottom: 42vw
+            +min-screen(1201px)
                 padding-bottom: 180px
     .bottom_background_triangular 
         width: calc(57.25% + 2px)
@@ -379,6 +403,9 @@
             text-align: right
             max-width: 722px
             margin-left: auto
+            +max-screen(1200px)
+                +min-screen(993px)
+                    max-width: 80%
             +max-screen(992px)
                 +min-screen(769px)
                     max-width: 100%
@@ -423,7 +450,16 @@
                 transform: translateY(-50%)
                 width: 97.625%
                 margin-left: -34px
-            +max-screen(992px)
+                +max-screen(1200px)
+                    +min-screen(993px)
+                        height: 85%
+                        margin-top: auto
+                        margin-bottom: auto
+                        object-fit: cover
+            +max-screen(1200px)
+                +min-screen(993px)
+                    margin-bottom: -90px
+                    margin-top: -120px
                 +min-screen(769px)
                     float: left 
                     position: static
@@ -471,6 +507,10 @@
         line-height: 1.1625
         margin-bottom: 82px
         padding-top: 97px
+        +max-screen(1200px)
+            +min-screen(993px)
+                max-width: 80%
+                margin-left: auto
         +max-screen(992px)
             margin-bottom: 48px
             padding-top: 64px
@@ -523,6 +563,9 @@
         clip-path: polygon(100% 0,100% 57.32%,68.78% 100%,0% 0%)
         width: 100%
         z-index: -1
+        +max-screen(1200px)
+            +min-screen(993px)
+                clip-path: polygon(100% 0,100% 57.32%,52.78% 100%,0 0)
         +max-screen(992px)
             clip-path: none
     .bottom_left_image 
@@ -532,6 +575,9 @@
         width: 68.49%
         height: 62%
         z-index: -2
+        +max-screen(1200px)
+            +min-screen(993px)
+                width: 54.49%
         +max-screen(992px)
             +min-screen(769px)
                 width: 50% 
@@ -560,6 +606,9 @@
         width: 34.32%
         height: 45.93%
         z-index: -3
+        +max-screen(1200px)
+            +min-screen(993px)
+                width: 49.32%
         +max-screen(992px)
             +min-screen(769px)
                 padding-right: 30px 
@@ -812,10 +861,17 @@
         margin-left: -54.3px 
         margin-right: -54.3px 
         justify-content: center
+        +max-screen(1200px)
+            +min-screen(993px)
+                margin-left: -20px
+                margin-right: -20px
     .container 
         max-width: 1708px 
         padding-left: 81px 
         padding-right: 50px   
+        +max-screen(1200px)
+            +min-screen(993px)
+                padding-left: 50px
         +max-screen(768px)
             padding-left: 30px 
             padding-right: 30px 
@@ -827,6 +883,11 @@
         right: 15%
         color: #fff
         letter-spacing: 19.5px
+        +max-screen(1200px)
+            +min-screen(993px)
+                font-size: 80px
+                letter-spacing: 0
+                top: 44%
         +max-screen(992px)
             font-size: 56px
             letter-spacing: 0
@@ -864,6 +925,9 @@
             //bottom: -22.2%
             clip-path: polygon(0 0,100% 51%,0% 100%,0% 0)
             transition-property: transform, opacity
+            +max-screen(1200px)
+                +min-screen(993px)
+                    clip-path: polygon(0 0,100% 47.5%,0 100%,0 0)
             +max-screen(992px)
                 clip-path: polygon(0 0,100% 19%,0 100%,0 0)
                 height: 61%
@@ -882,6 +946,11 @@
         line-height: 1.2454
         right: 7.8%
         bottom: 307px
+        +max-screen(1200px)
+            +min-screen(993px)
+                bottom: 8%
+                right: 3.8%
+                left: 55%
         +max-screen(992px)
             right: 2.8% 
             bottom: 12%

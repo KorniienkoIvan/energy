@@ -102,8 +102,14 @@ $(document).ready(function(){
 });
 $(window).on('load', function(){
     var w = $(window).width();
-    if(w < 992 && w > 769) {
-        var height = $('.experimental .experimental__main').height() + 26;
+    if(w < 1201 && w > 768) {
+        var height = $('.experimental .experimental__main').height();
+        if(w < 993 && w > 768){
+            var height = height + 26;
+        }
+        else{
+            var height = height + 210;
+        }
         $('.experimental .left_triangular_image').prependTo('.experimental .experimental__main .container');
         $('.experimental .left_triangular_image').css('height', height);
     }

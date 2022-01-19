@@ -171,19 +171,20 @@
 		<div class="row home_page_cards">
 			<?php $i = 0; ?>
 			<?php while(have_rows('cards')): the_row(); ?>
-				<div class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
 					<?php 
 						$image = get_sub_field('card_background_image');
 						$title = get_sub_field('card_title');
 						$text = get_sub_field('card_subtitle');
+						$link = get_sub_field('card_link');
 					?>
+				<a href="<?php echo $link['url'] ?>" class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
 					<div class="home_page_card__image"><img src="<?php if($image){echo $image;}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt=""></div>
 					<div class="home_page_card__content">
 						<?php if($title): ?><div class="home_page_card__title"><?php echo $title; ?></div><?php endif; ?>
 						<?php if($text): ?><div class="home_page_card__subtitle"><?php echo $text; ?></div><?php endif; ?>
 					</div>
 					<div class="left_triangular"></div>		
-				</div>
+				</a>
 				<?php $i++; ?>
 			<?php endwhile; ?>
 		</div>

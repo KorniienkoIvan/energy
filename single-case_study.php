@@ -4,13 +4,18 @@
 Template Name: Single page
 */
 ?>
-<?php get_header(); ?>
+<?php get_header(); 
+	$featured_image_url = get_the_post_thumbnail_url();
+	if (empty($featured_image_url)) : $featured_image_url = get_template_directory_uri() . '/assets/images/Dettol_TFL06.jpg'; endif;
+	
+
+?>
 <section class="single-page__wrapper">
     <div class="single-page__lines2"></div>
     <div class="left_side_background">
         <div class="single-page__lines1"></div>
     </div>
-    <div class="right_side_image"><img src="<?php echo get_template_directory_uri() ?>/assets/images/Dettol_TFL06.jpg" alt=""></div>
+    <div class="right_side_image"><img src="<?php echo $featured_image_url;?>" alt=""></div>
 
     <div class="container">
         <div class="single-page__content">
