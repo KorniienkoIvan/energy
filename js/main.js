@@ -128,6 +128,9 @@ $(window).on('load', function(){
     if(w > 920 && w < 993){
         var bottom = '-23.2%';
     }
+    else if(w >= 2160){
+        var bottom = '-24.2%';
+    }
     else{ 
         var bottom = '-22.2%';
     }
