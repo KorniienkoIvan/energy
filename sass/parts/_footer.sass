@@ -44,3 +44,16 @@
     .home &
         .back_to_top_button
             display: none
+.single 
+    .footer
+        .back_to_top_button
+            margin-top: 32px
+            color: #121938
+        &.has-background
+            .back_to_top_button
+                color: #fff
+                margin-top: -155px
+                +max-screen(992px)
+                    margin-top: -105px
+                +max-screen(768px)
+                    margin-top: -80px

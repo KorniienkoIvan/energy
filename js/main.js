@@ -99,6 +99,11 @@ $(document).ready(function(){
     $('.header .mobile_burger_icon').click(function(){
         $('.header').toggleClass('open');
     });
+    //Single page footer
+    var blockCLass = $('.single .single-page__content > div').last().attr('class');
+    if(blockCLass == 'single-page__image' || blockCLass == 'single-page__slider' || $('.single #main section').last().attr('class') == 'testimonial'){
+        $('footer').addClass('has-background');
+    }
 });
 $(window).on('load', function(){
     var w = $(window).width();
