@@ -80,7 +80,8 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 0,
+        speed: 2000,
         dots: false,
         arrows: false,
         centerMode: true,
@@ -110,7 +111,7 @@ $(window).on('load', function(){
     if(w < 1201 && w > 768) {
         var height = $('.experimental .experimental__main').height();
         if(w < 993 && w > 768){
-            var height = height + 26;
+            //var height = height + 26;
         }
         else{
             var height = height + 210;
@@ -118,5 +119,13 @@ $(window).on('load', function(){
         $('.experimental .left_triangular_image').prependTo('.experimental .experimental__main .container');
         $('.experimental .left_triangular_image').css('height', height);
     }
-    jQuery('.contact__titleWrapper').css('bottom', '-22.2%');
+    if(w > 920 && w < 993){
+        var bottom = '-23.2%';
+    }
+    else{ 
+        var bottom = '-22.2%';
+    }
+    $('.contact__titleWrapper').css('bottom', bottom);
+    var height = $('.digital_experience').height();
+    $('.digital_experience .left_transparent_triangular').css('height', height);
 });
