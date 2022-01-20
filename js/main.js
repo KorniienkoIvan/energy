@@ -1,16 +1,24 @@
-var $ = jQuery;
+import $  from 'jquery';
+import { parallax } from './animations/parallax';
+import { appearence } from './animations/appearence';
+
+//Animations
+parallax();
+appearence();
 
 //lazy loading
-function lazyInit(){
-    $('.lazy-img').Lazy({
-        afterLoad: function(element){
-            imagesLoaded(element,function(){
-                element.parent().addClass('loaded');
-            });
-        }
-    });
-}
-lazyInit();
+// function lazyInit(){
+//     $('.lazy-img').Lazy({
+//         afterLoad: function(element){
+//             imagesLoaded(element,function(){
+//                 element.parent().addClass('loaded');
+//             });
+//         }
+//     });
+// }
+// lazyInit();
+
+
 //smooth scroll to anchor
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
@@ -23,14 +31,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 //animations
 
 //appearence animation on scroll
-$('.appear').each(function() {
-    let el = $(this);
-    let inview = el.waypoint(function(direction) {
-        el.addClass('visible');
-    }, {
-        offset: '95%'
-    });
-});
+// $('.appear').each(function() {
+//     let el = $(this);
+//     let inview = el.waypoint(function(direction) {
+//         el.addClass('visible');
+//     }, {
+//         offset: '95%'
+//     });
+// });
 
 $(document).ready(function(){
     //Single Page Slider

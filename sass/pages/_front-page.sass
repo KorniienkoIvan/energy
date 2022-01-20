@@ -289,7 +289,8 @@
         margin-bottom: 34px 
         +max-screen(768px)
             text-align: left
-    &__bottom 
+    &__bottom
+
         .container 
             max-width: 51.3%
             margin-left: 0 
@@ -329,7 +330,7 @@
     .bottom_background_triangular 
         width: calc(57.25% + 2px)
         position: absolute
-        bottom: 0 
+        bottom: -10%
         right: 0
         clip-path: polygon(0 100%,100% 0,100% 100%,0% 100%)
         img 
@@ -338,7 +339,7 @@
             object-fit: cover 
             object-position: center
             position: absolute
-            top: 0
+            top: 0%
             right: 0
         &::before 
             content: ""
@@ -384,16 +385,15 @@
                 display: block
                 padding-bottom: 100%
         &__line 
-            &::before 
-                content: ""
-                position: absolute
-                top: 14% 
-                left: 1.13%
-                width: 23.039%
-                height: 1px 
-                background: #E99C00
-                transform: rotate(45deg)
-                z-index: 2
+            content: ""
+            position: absolute
+            top: -30% 
+            left: -5%
+            width: 23.039%
+            height: 1px 
+            background: #E99C00
+            transform: rotate(45deg)
+            z-index: 2
     &__main 
         position: relative
         +max-screen(768px)
@@ -446,10 +446,13 @@
                         content: none
             img 
                 position: absolute
-                top: 46.5%
+                top: 25%
                 transform: translateY(-50%)
                 width: 97.625%
+                height: 100%
+                object-fit: cover
                 margin-left: -34px
+                // transform: scale(1.3)
                 +max-screen(1200px)
                     +min-screen(993px)
                         height: 85%
