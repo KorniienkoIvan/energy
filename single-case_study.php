@@ -24,7 +24,7 @@ Template Name: Single page
                 $header_title = get_field('single_header_title');
                 $header_content = get_field('single_header_content');
             ?>
-            <?php if($header_logo): ?><div class="single-page__logo appear fade-right"><img src="<?php echo $header_logo; ?>" alt=""></div><?php endif; ?>
+            <?php if($header_logo): ?><div class="single-page__logoWrapper appear fade-right"><div class="single-page__logo"><img src="<?php echo $header_logo; ?>" alt=""></div></div><?php endif; ?>
             <?php if($header_title): ?><h2 class="single-page__title appear fade-right delay-1"><?php echo $header_title; ?></h2><?php endif; ?>
             <?php if($header_content): ?><h3 class="single-page__subtitle appear fade-right delay-2"><?php echo $header_content; ?></h3><?php endif; ?>
             <div class="separator"></div>
@@ -36,7 +36,7 @@ Template Name: Single page
             <div class="single-page__additional-text">
                 <?php if($challenge_title): ?><h3 class="title appear fade-bottom"><?php echo $challenge_title; ?></h3><?php endif; ?>
                 <?php if($challenge_left_column || $challenge_right_column): ?>
-                    <div class="text">
+                    <div class="text content-block">
                         <div class="left-col appear fade-right delay-1"><?php echo $challenge_left_column; ?></div>
                         <div class="right-col appear fade-left delay-1"><?php echo $challenge_right_column; ?></div>
                     </div>

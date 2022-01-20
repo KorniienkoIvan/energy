@@ -177,7 +177,7 @@
 						$text = get_sub_field('card_subtitle');
 						$link = get_sub_field('card_link');
 					?>
-				<a href="<?php echo $link['url'] ?>" class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
+				<a <?php if($link): ?>href="<?php echo $link['url'] ?>"<?php endif; ?> class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
 					<div class="home_page_card__image"><img src="<?php if($image){echo $image;}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt=""></div>
 					<div class="home_page_card__content">
 						<?php if($title): ?><div class="home_page_card__title"><?php echo $title; ?></div><?php endif; ?>
