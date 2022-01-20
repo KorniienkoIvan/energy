@@ -120,7 +120,6 @@
 <?php $id = get_field('digital_experience_block_id'); ?>
 <section class="digital_experience" id="<?php echo $id; ?>">
 	<div class="top_triangular"></div>
-	<div class="right_triangular"></div>
 	<?php 
 		$title = get_field('digital_experience_title');
 		$subtitle = get_field('digital_experience_subtitle');
@@ -130,6 +129,7 @@
 	?>
 	<div class="container">
 		<div class="digital_experience__contentWrapper">
+			<div class="left_transparent_triangular"></div>
 			<?php if($title): ?>
 				<h2 class="digital_experience__title appear fade-right">
 					<?php echo $title; ?>
