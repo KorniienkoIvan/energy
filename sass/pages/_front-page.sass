@@ -37,13 +37,14 @@
             opacity: .4
         img 
             width: 100% 
-            height: 100% 
+            height: 110% 
             object-fit: cover
             max-width: 86.55%
             display: block
             margin-left: auto 
             margin-right: auto
             position: relative
+            bottom: 0
             +max-screen(1400px)
                 +min-screen(769px)
                     max-width: 100%
@@ -291,7 +292,7 @@
 
         .separator 
             height: 24px 
-            background: #E99C00
+            // background: #E99C00
             width: 38.9%
             margin-left: auto 
             +max-screen(768px)
@@ -481,7 +482,7 @@
                 padding-bottom: 32px
         .separator
             height: 24px 
-            background: #00A684
+            // background: #00A684
             width: 43.6%
             margin-left: auto 
             +max-screen(768px)
@@ -615,7 +616,7 @@
     .separator 
         height: 24px 
         width: 41.8%
-        background: #fff 
+        // background: #fff 
         display: inline-block
         margin-bottom: 40px
         +max-screen(992px)
@@ -678,6 +679,7 @@
         width: 68.49%
         height: 62%
         z-index: -2
+        overflow: hidden
         +max-screen(992px)
             +min-screen(769px)
                 width: 50% 
@@ -691,8 +693,10 @@
             width: 100%
         img
             width: 100% 
-            height: 100%
+            height: 120%
             object-fit: cover
+            position: relative
+            bottom: 0
             +max-screen(768px)
                 padding-bottom: 30px
         +max-screen(768px)
@@ -706,6 +710,7 @@
         width: 34.32%
         height: 45.93%
         z-index: -3
+        overflow: hidden
         +max-screen(992px)
             +min-screen(769px)
                 padding-right: 30px 
@@ -719,9 +724,11 @@
             width: 100%
         img
             width: 100% 
-            height: 100%
+            height: 120%
             object-position: left
             object-fit: cover
+            bottom: 0
+            position: relative
             +max-screen(768px)
                 padding-bottom: 30px
         +max-screen(768px)
@@ -1094,3 +1101,28 @@
         &__google-maps
             a 
                 text-decoration: underline
+
+.separator
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        width: 50%
+        right: 0
+        height: 100%
+        background: red
+        transition: linear 1s all
+        .active-separator &
+            width: 100%
+        .experimental__main &
+            background-color: #00a684
+        .brand_experience__top &
+            background-color: #e99c00
+        .digital_experience &
+            background-color: white
+            left: 0
+        .single-page__wrapper &
+            background-color: #CA3240
+
+
+

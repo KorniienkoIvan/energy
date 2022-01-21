@@ -44,10 +44,10 @@ Template Name: Single page
             </div>
             <?php $gallery = get_field('post_gallery'); ?>
             <?php if($gallery): ?>
-                <div class="single-page__slider">
+                <div class="single-page__slider appear fade-bottom">
                     <?php $i = 0; ?>
                     <?php foreach($gallery as $gallery_item): ?>
-                        <img src="<?php echo $gallery_item['url']; ?>" class="appear fade-bottom" alt="" style="transition-delay: 0.<?php echo $i; ?>s">
+                        <img src="<?php echo $gallery_item['url']; ?>" class="" alt="">
                         <?php $i++; ?>
                     <?php endforeach; ?>
                 </div>
