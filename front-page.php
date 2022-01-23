@@ -166,9 +166,9 @@
 </section>
 <?php endif; ?>
 <?php $id = get_field('cards_block_id'); ?>
-<section class="home_page_cards_wrapper" id="<?php echo $id; ?>">
+<section class="page_cards_wrapper" id="<?php echo $id; ?>">
 	<?php if(have_rows('cards')): ?>
-		<div class="row home_page_cards">
+		<div class="row page_cards">
 			<?php $i = 0; ?>
 			<?php while(have_rows('cards')): the_row(); ?>
 					<?php 
@@ -177,11 +177,11 @@
 						$text = get_sub_field('card_subtitle');
 						$link = get_sub_field('card_link');
 					?>
-				<a <?php if($link): ?>href="<?php echo $link['url'] ?>"<?php endif; ?> class="col-lg-3 col-md-6 col-12 home_page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
-					<div class="home_page_card__image"><img src="<?php if($image){echo $image;}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt=""></div>
-					<div class="home_page_card__content">
-						<?php if($title): ?><div class="home_page_card__title"><?php echo $title; ?></div><?php endif; ?>
-						<?php if($text): ?><div class="home_page_card__subtitle"><?php echo $text; ?></div><?php endif; ?>
+				<a <?php if($link): ?>href="<?php echo $link['url'] ?>"<?php endif; ?> class="col-lg-3 col-md-6 col-12 page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
+					<div class="page_card__image"><img src="<?php if($image){echo $image;}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt=""></div>
+					<div class="page_card__content">
+						<?php if($title): ?><div class="page_card__title"><?php echo $title; ?></div><?php endif; ?>
+						<?php if($text): ?><div class="page_card__subtitle"><?php echo $text; ?></div><?php endif; ?>
 					</div>
 					<div class="left_triangular"></div>		
 				</a>
@@ -194,10 +194,10 @@
 		$right_text = get_field('right_text');
 	?>
 	<?php if($left_text || $right_text): ?>
-		<div class="home_page_cards_bottom">
+		<div class="page_cards_bottom">
 			<div class="container">
-				<?php if($left_text): ?><div class="home_page_cards_bottom__title appear fade-right delay-2"><?php echo $left_text; ?></div><?php endif; ?>
-				<?php if($right_text): ?><div class="home_page_cards_bottom__subtitle appear fade-left delay-2"><?php echo $right_text; ?></div><?php endif; ?>
+				<?php if($left_text): ?><div class="page_cards_bottom__title appear fade-right delay-2"><?php echo $left_text; ?></div><?php endif; ?>
+				<?php if($right_text): ?><div class="page_cards_bottom__subtitle appear fade-left delay-2"><?php echo $right_text; ?></div><?php endif; ?>
 			</div>
 		</div>
 	<?php endif; ?>

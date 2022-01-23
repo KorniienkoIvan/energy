@@ -1,0 +1,295 @@
+.page-template-our_work #main 
+    overflow: visible//удалить
+.case_study_archive 
+    position: relative
+    overflow: visible //удалить
+    padding-bottom: 500px
+    +max-screen(1919px)
+        padding-bottom: 320px
+    +max-screen(1440px)
+        padding-bottom: 0
+    .left_triangular
+        width: 38.8%
+        position: absolute 
+        top: 0
+        left: 0
+        background: #121938
+        z-index: 1
+        clip-path: polygon(0 0,100% 0,100% 0,0 100%)
+        +max-screen(993px)
+            +min-screen(769px)
+                width: 50%
+        +max-screen(768px)  
+            width: 55%
+        +max-screen(440px)
+            width: 65%
+        &::before 
+            content: ""
+            padding-bottom: 100% 
+            display: block 
+    .right_triangular
+        width: 96.7%
+        position: absolute 
+        top: 0
+        right: 0
+        background: #CA3240
+        clip-path: polygon(0 0,100% 0,100% 100%,100% 100%)
+        +max-screen(993px)
+            +min-screen(769px)
+                width: 105%
+        +max-screen(768px)
+            width: 110%
+        +max-screen(440px)
+            width: 120%
+        &::before 
+            content: ""
+            display: block 
+            padding-bottom: 100%
+    .page_title
+        padding-top: 18.39vw
+        text-align: center
+        margin-left: -20px
+        color: #fff
+        margin-bottom: 138px
+        position: relative
+        z-index: 2
+        +max-screen(993px)
+            +min-screen(769px)
+                padding-top: 150px 
+        +max-screen(440px)
+            padding-top: 30vw
+    .card,
+    .cards_col
+        padding: 0
+    .row 
+        margin: 0
+    .card 
+        position: relative
+        .left_triangular
+            width: 20%
+            clip-path: polygon(0 0,0 0,100% 100%,0 100%)
+            left: 0 
+            bottom: 0
+            position: absolute
+            top: auto
+            &::before 
+                content: ""
+                display: block
+                padding-bottom: 100%
+        &.col-12
+            .left_triangular
+                width: 10%
+        &.red 
+            .left_triangular
+                background: #D43240
+        &.orange 
+            .left_triangular
+                background: #E8A319
+        &.l_green 
+            .left_triangular
+                background: #94C8C6
+        &::before 
+            content: ""
+            display: block
+        &__content 
+            position: absolute
+            left: 50% 
+            top: 50%
+            transform: translate( -50%, -50% )
+            width: 75%
+        &__title 
+            text-align: center
+            color: #fff 
+            font-size: 60px
+            line-height: 1 
+            position: relative
+            text-transform: uppercase
+            +max-screen(1919px)
+                font-size: 52px
+            +max-screen(1440px)
+                font-size: 48px
+            +max-screen(1200px)
+                font-size: 42px
+            +max-screen(768px)
+                font-size: 34px
+            +max-screen(768px)
+                margin-bottom: 10px
+            &::after 
+                content: ""
+                height: 2px
+                width: 100% 
+                max-width: 305px
+                left: 50% 
+                bottom: -10px
+                position: absolute
+                transform: translateX(-50%)
+                +max-screen(768px)
+                    bottom: -5px
+        &.red 
+            .card__title
+                &::after 
+                    background: #D43240
+        &.l_green 
+            .card__title 
+                &::after 
+                    background: #94C8C6
+        &.orange 
+            .card__title 
+                &::after 
+                    background: #E8A319
+        &__subtitle
+            color: #fff
+            font-size: 32px
+            line-height: 1.875
+            text-align: center
+            +max-screen(768px)
+                line-height: 1.2
+        &__background 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100% 
+            height: 100% 
+            img
+                width: 100%
+                height: 100% 
+                object-fit: cover 
+                object-position: center
+    .first_grid 
+        .card
+            &s_col:first-child
+                .row
+                    align-items: flex-start
+                .card:first-child
+                    &::before 
+                        padding-bottom: 100%
+                        +max-screen(1440px)
+                            +min-screen(1201px)
+                                padding-bottom: 200%
+                .card:last-child
+                    +max-screen(1200px)
+                        +min-screen(769px)
+                            margin-bottom: -50%
+                    &::before
+                        padding-bottom: 200%
+            &s_col:last-child
+                .card 
+                    &:first-child
+                        &::before
+                            padding-bottom: 100%
+                        +max-screen(1440px)
+                            +min-screen(1201px)
+                                max-width: 100% 
+                                flex: 0 0 100%
+                                &::before
+                                    padding-bottom: 50%
+                    &:last-child
+                        &::before
+                            padding-bottom: 50%
+    .second_grid 
+        .card 
+            &s_col 
+                &:first-child
+                    .card 
+                        &::before 
+                            padding-bottom: 100% 
+                            +max-screen(1200px)
+                                +min-screen(769px)
+                                    padding-bottom: 50%
+                &:last-child
+                    .row 
+                        align-items: flex-end
+                        +max-screen(768px)
+                            +min-screen(560px)
+                                margin-top: -50%
+                    .card 
+                        &:first-child 
+                            +max-screen(768px)
+                                +min-screen(560px)
+                                    margin-top: 50%
+                            &::before 
+                                padding-bottom: 100%
+                                +max-screen(1440px)
+                                    +min-screen(1201px)
+                                        padding-bottom: 200%
+                                +max-screen(993px)
+                                    +min-screen(769px)
+                                        padding-bottom: 100%
+                        &:last-child
+                            +max-screen(768px)
+                                +min-screen(560px)
+                                    margin-bottom: 50%
+                            &::before 
+                                padding-bottom: 200%
+                                +max-screen(1200px)
+                                    +min-screen(769px)
+                                        padding-bottom: 100%
+    .third_grid 
+        .card
+            .left_triangular
+                width: 10%
+            &s_col 
+                &:first-child
+                    .row 
+                        justify-content: center
+                        +max-screen(1440px)
+                            +min-screen(1201px)
+                                justify-content: flex-end
+                                margin-bottom: -100%
+                        +max-screen(768px)
+                            +min-screen(560px)
+                                margin-top: -50%
+                                justify-content: flex-end
+                    .card 
+                        &::before 
+                            padding-bottom: 50%
+                &:last-child
+                    .row 
+                        align-items: flex-start
+                        +max-screen(1440px)
+                            +min-screen(1201px)
+                                align-items: flex-end
+                    .card 
+                        &:first-child
+                            &::before
+                                padding-bottom: 100%
+                                +max-screen(1200px)
+                                    +min-screen(769px)
+                                        padding-bottom: 50%
+                        &:last-child
+                            &::before
+                                padding-bottom: 50%
+    .first_grid,
+    .second_grid,
+    .third_grid 
+        z-index: 2
+        position: relative
+        +max-screen(768px)
+            .card
+                +min-screen(560px)
+                    width: 50%
+                    max-width: 50%
+                    flex: 0 0 50%
+                &s_col 
+                    &:first-child,
+                    &:last-child
+                        .card 
+                            &:first-child,
+                            &:last-child
+                                &::before
+                                    padding-bottom: 100%
+    .bottom_right_triangular 
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 88.22%
+        background: #94C8C6
+        clip-path: polygon(100% 0,100% 0,100% 100%,0 100%)
+        &::before 
+            content: ""
+            display: block 
+            padding-bottom: 100%
+    .col-lg-6
+        +max-screen(1200px)
+            flex: 0 0 100% 
+            max-width: 100%

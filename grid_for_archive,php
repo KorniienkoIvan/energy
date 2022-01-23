@@ -1,0 +1,58 @@
+<div class="first_grid row cards_wrapper">
+    <div class="col-md-6 cards_col">
+        <div class="col-md-6 card">
+            <div class="card__title">DETTOL</div>
+            <div class="card_subtitle">TFL SAMPLING</div>
+        </div>
+        <div class="col-md-6 card">
+            <div class="card__title">TIKTOK</div>
+            <div class="card_subtitle">STREET MURAL</div>
+        </div>
+    </div>
+    <div class="col-md-6 cards_col">
+        <div class="col-md-6 card">
+            <div class="card__title">ONEPLUS</div>
+            <div class="card_subtitle">SERIES 7 LAUNCH</div>
+        </div>
+        <div class="col-md-6 card">
+            <div class="card__title">ROLLS ROYCE</div>
+            <div class="card_subtitle">GOODWOOD FESTIVAL OF SPEED</div>
+        </div>
+    </div>
+</div>
+<div class="second_grid row cards_wrapper">
+    <div class="col-md-6 cards_col">
+        <div class="col-md-6 card">
+            <div class="card__title">SAMSUNG</div>
+            <div class="card_subtitle">SPIN TO WIN</div>
+        </div>
+    </div>
+    <div class="col-md-6 cards_col">
+        <div class="col-md-6 card">
+            <div class="card__title">ONEPLUS</div>
+            <div class="card_subtitle">SERIES 7 LAUNCH</div>
+        </div>
+        <div class="col-md-6 card">
+            <div class="card__title">MICROSOFT</div>
+            <div class="card_subtitle">ESCAPE ROOMS</div>
+        </div>
+    </div>
+</div>
+<div class="third_grid row cards_wrapper">
+    <div class="col-12 cards_col">
+        <div class="col-md-6 card">
+            <div class="card__title">MINI</div>
+            <div class="card_subtitle">RETAILER OF THE YEAR AWARDS</div>
+        </div>
+    </div>
+    <div class="col-md-6 cards_col">
+        <div class="col-md-6 card">
+            <div class="card__title">DETTOL</div>
+            <div class="card_subtitle">TRU CLEAN PLANT BASED KITCHEN</div>
+        </div>
+        <div class="col-md-6 card">
+            <div class="card__title">TACO BELL</div>
+            <div class="card_subtitle">LONDON EYE PROJECTION</div>
+        </div>
+    </div>
+</div>
