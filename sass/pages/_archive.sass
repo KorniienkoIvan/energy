@@ -21,6 +21,8 @@
                 width: 50%
         +max-screen(768px)  
             width: 55%
+            +min-screen(577px)
+                width: 60%
         +max-screen(440px)
             width: 65%
         &::before 
@@ -56,6 +58,9 @@
         +max-screen(993px)
             +min-screen(769px)
                 padding-top: 150px 
+        +max-screen(768px)
+            +min-screen(577px)
+                padding-top: 25vw
         +max-screen(440px)
             padding-top: 30vw
     .card,
