@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function appearence(){
-    console.log('appearence');
     $('.appear').each(function(){
         let el = $(this);
         let disabled = false;
@@ -85,6 +84,17 @@ function appearence(){
             },        
         });
     });
+
+    if ($('.aboutUs').length) {
+        console.log('aboutus');
+
+        $('.aboutUs').on('scroll', function(){
+            console.log('aboutus');
+            ScrollTrigger.refresh();
+
+        })
+    }
+    
 }
 
 export { appearence };
