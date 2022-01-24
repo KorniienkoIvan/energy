@@ -1,10 +1,8 @@
 import $  from 'jquery';
 import { parallax } from './animations/parallax';
 import { appearence } from './animations/appearence';
+import { sliders } from './animations/sliders';
 
-//Animations
-parallax();
-appearence()
 
 // //lazy loading
 // function lazyInit(){
@@ -40,67 +38,79 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 $(document).ready(function(){
     //Single Page Slider
-    $('.single-page__slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        cssEase: 'linear',
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 300,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-              }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-            },
-        ]
-    });
-    $('.testimonial__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        arrows: false,
-    });
-    $('.brands_line__slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 2000,
-        dots: false,
-        arrows: false,
-        centerMode: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-            },
-        ]
-    });
+    // var slider = $('.single-page__slider').slick({
+    //     infinite: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     cssEase: 'linear',
+    //     arrows: false,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     speed: 300,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1200,
+    //           settings: {
+    //             slidesToShow: 3,
+    //             slidesToScroll: 1
+    //           }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //               slidesToShow: 2,
+    //               slidesToScroll: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 576,
+    //             settings: {
+    //               slidesToShow: 1,
+    //               slidesToScroll: 1
+    //             }
+    //         },
+    //     ]
+    // });
+    // var slider2 = $('.testimonial__slider').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     cssEase: 'linear',
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     dots: false,
+    //     arrows: false,
+    // });
+    // var slider3 = $('.brands_line__slider').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 0,
+    //     speed: 2000,
+    //     dots: false,
+    //     arrows: false,
+    //     centerMode: true,
+    //     responsive: [
+    //         {
+    //             breakpoint: 992,
+    //             settings: {
+    //               slidesToShow: 1,
+    //               slidesToScroll: 1
+    //             }
+    //         },
+    //     ]
+    // });
+
+    // slider.on('init', function(){
+    //     $(window).trigger('heightChanges');
+    // });
+
+    // slider2.on('init', function(){
+    //     $(window).trigger('heightChanges');
+    // });
+
+    // slider3.on('init', function(){
+    //     $(window).trigger('heightChanges');
+    // });
 
     //Mobile Header 
     $('.header .mobile_burger_icon').click(function(){
@@ -138,3 +148,8 @@ $(window).on('load', function(){
     var height = $('.digital_experience').height();
     $('.digital_experience .left_transparent_triangular').css('height', height);
 });
+
+//Animations
+parallax();
+appearence();
+sliders();

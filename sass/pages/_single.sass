@@ -15,6 +15,8 @@
             right: 0
             top: 0
             width: 66.4%
+            overflow: hidden
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%)
             +max-screen(1440px)
                 width: 70%
             +max-screen(992px)
@@ -28,8 +30,7 @@
                 display: block
                 padding-top: 100%
             img 
-                height: 100%
-                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%)
+                height: 110%
                 width: 100%
                 object-position: bottom left
                 object-fit: cover
@@ -180,6 +181,9 @@
         margin-right: calc( (1230px - 100vw)/2 - 184px)
         margin-top: 125px
         margin-bottom: -1px
+        overflow: hidden
+        position: relative
+        padding-bottom: 75%
         +max-screen(1230px)
             margin-left: -30px 
             margin-right: -184px
@@ -191,10 +195,12 @@
             margin-left: calc( (1530px - 100vw)/2 - 30px)
             margin-right: calc( (1530px - 100vw)/2 - 250px)
         img
-            width: 100% 
+            width: 100%
             object-fit: cover
-            object-position: center
             max-height: 910px
+            top: -10%
+            position: absolute
+            height: 130%
     &__additional-text 
         .title 
             margin-bottom: 20px

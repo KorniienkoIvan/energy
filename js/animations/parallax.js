@@ -162,6 +162,58 @@ function parallax(){
        
     });
 
+    $('.single-page__wrapper').each(function(){
+        var image = $(this).find('.right_side_image img');
+        var wrapper = $(this);
+        gsap.to(image ,{
+            scrollTrigger: {
+                trigger: wrapper,
+                pin: false,
+                start: "top top",
+                end: "+=700",
+                scrub: 1,
+                markers: false,
+                onToggle: function(self){
+             
+                },
+            },   
+            top: $(window).width()>768?'-10%':'-10%',    
+        });
+      
+
+        $(window).on('resize', function(){
+
+            ScrollTrigger.refresh();
+        })
+       
+    });
+
+    $('.single-page__image').each(function(){
+        var image = $(this).find('img');
+        var wrapper = $(this);
+        gsap.to(image ,{
+            scrollTrigger: {
+                trigger: wrapper,
+                pin: false,
+                start: "top top",
+                end: "+=300",
+                scrub: 1,
+                markers: false,
+                onToggle: function(self){
+             
+                },
+            },   
+            top: $(window).width()>768?'-30%':'-30%',    
+        });
+      
+
+        $(window).on('resize', function(){
+
+            ScrollTrigger.refresh();
+        })
+       
+    });
+
 }
 
 export { parallax };
