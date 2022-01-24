@@ -242,6 +242,8 @@
                                 justify-content: flex-end
                                 margin-bottom: -100%
                         +max-screen(768px)
+                            max-width: 50%
+                            margin-left: auto
                             +min-screen(560px)
                                 margin-top: -50%
                                 justify-content: flex-end
@@ -283,6 +285,27 @@
                             &:last-child
                                 &::before
                                     padding-bottom: 100%
+    .second_grid 
+        .card 
+            &s_col 
+                &:first-child
+                    +max-screen(768px)
+                        z-index: 3
+                        max-width: 50%
+                    .card 
+                        +max-screen(768px)
+                            max-width: 100%
+                            width: 100% 
+                            flex: 0 0 100%
+    .third_grid 
+        .card
+            &s_col 
+                &:first-child
+                    .card 
+                        +max-screen(768px)
+                            max-width: 100% 
+                            flex: 0 0 100%
+                            width: 100%
     .bottom_right_triangular 
         position: absolute
         bottom: 0
