@@ -174,6 +174,23 @@ function parallax(){
             },   
             top: $(window).width()>768?'-10%':'-5%',     
         });
+
+        var brandline = $(this).find('.brand_experience__line');
+        gsap.to(brandline ,{
+            scrollTrigger: {
+                trigger: wrapper,
+                pin: false,
+                start: "top top",
+                end: "+=1000",
+                scrub: 1,
+                markers: false,
+                onToggle: function(self){
+             
+                },
+            },   
+            top: $(window).width()>768?'7%':'7%', 
+            right: $(window).width()>768?'10%':'10%',    
+        });
       
 
         $(window).on('resize', function(){
