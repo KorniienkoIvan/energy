@@ -94,6 +94,10 @@ function appearence(){
 
         })
     }
+
+    $(window).on("heightChanges", function(){
+        ScrollTrigger.refresh();
+    })
     
 }
 

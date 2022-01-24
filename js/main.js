@@ -40,7 +40,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 $(document).ready(function(){
     //Single Page Slider
-    $('.single-page__slider').slick({
+    var slider = $('.single-page__slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -73,7 +73,7 @@ $(document).ready(function(){
             },
         ]
     });
-    $('.testimonial__slider').slick({
+    var slider2 = $('.testimonial__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: 'linear',
@@ -82,7 +82,7 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
     });
-    $('.brands_line__slider').slick({
+    var slider3 = $('.brands_line__slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
@@ -100,6 +100,18 @@ $(document).ready(function(){
                 }
             },
         ]
+    });
+
+    slider.on('init', function(){
+        $(window).trigger('heightChanges');
+    });
+
+    slider2.on('init', function(){
+        $(window).trigger('heightChanges');
+    });
+
+    slider3.on('init', function(){
+        $(window).trigger('heightChanges');
     });
 
     //Mobile Header 
