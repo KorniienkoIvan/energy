@@ -20,7 +20,12 @@ get_header(); ?>
                 <?php if($i == 1 || $i == 2): ?>
                     <div class="aboutUs_block__lines1"></div>
                     <div class="aboutUs_block__lines2"></div>
-                    <?php if($i == 1): ?><div class="aboutUs_block__lines3"></div><?php endif; ?>
+                    <div class="aboutUs_block__lines3"></div>
+                    <div class="aboutUs_block__lines4"></div>
+                    <?php if($i == 1): ?>
+                        <div class="aboutUs_block__lines5"></div>
+                        <div class="aboutUs_block__lines6"></div>    
+                    <?php endif; ?>
                 <?php endif; ?>
             </div>
             <?php $i++; ?>

@@ -12,6 +12,8 @@
 	<div class="right_triangular"></div>
 	<div class="background_lines1"></div>
 	<div class="background_lines2"></div>
+	<div class="background_lines3"></div>
+	<div class="background_lines4"></div>
 	<div class="container">
 		<?php if($title): ?><h1 class="hero_block__title appear fade-right"><?php echo $title; ?></h1><?php endif; ?>
 		<?php if($subtitle): ?><div class="hero_block__subtitle appear fade-right delay-1"><?php echo $subtitle; ?></div><?php endif; ?>
@@ -251,6 +253,7 @@
 		<?php if($contact_email): ?><div class="contact__data__email">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>
 		<?php if($google_map): ?><div class="contact__data__google-maps"><a href="<?php echo $goolge_map['url']; ?>"><?php echo $google_map['title']; ?></a></div><?php endif; ?>	
 	</div>
-	<?php //echo do_shortcode('[ank_google_map]'); ?>
+	<?php echo do_shortcode('[ank_google_map]'); ?>
 </section>
+
 <?php get_footer(); ?>

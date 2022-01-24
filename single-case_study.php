@@ -11,9 +11,11 @@ Template Name: Single page
 
 ?>
 <section class="single-page__wrapper">
-    <div class="single-page__lines2"></div>
+    <div class="single-page__lines3"></div>
     <div class="left_side_background">
         <div class="single-page__lines1"></div>
+        <div class="single-page__lines2"></div>
+
     </div>
     <div class="right_side_image"><img src="<?php echo $featured_image_url;?>" alt=""></div>
 

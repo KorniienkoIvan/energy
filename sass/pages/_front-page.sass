@@ -63,9 +63,8 @@
                 +max-screen(1400px)
                     +min-screen(993px)
                         content: none
-    .background_lines1
-        &::before
-            content: ""
+    .background_lines
+        &1
             position: absolute
             -webkit-transform: rotate(45deg)
             transform: rotate(45deg)
@@ -74,8 +73,7 @@
             left: -2%
             width: 12.5%
             height: 2px
-        &::after 
-            content: ""
+        &2 
             position: absolute
             -webkit-transform: rotate(45deg)
             transform: rotate(45deg)
@@ -84,9 +82,7 @@
             bottom: 7.7%
             right: -0.8%
             width: 11.4%
-    .background_lines2
-        &::before 
-            content: ""
+        &3
             position: absolute
             height: 1px
             top: 9.3%
@@ -94,8 +90,7 @@
             width: 13.725%
             background: #FF8000
             transform: rotate(45deg) 
-        &::after 
-            content: ""
+        &4 
             position: absolute 
             right: 19.9%
             top: 58.1%
@@ -245,16 +240,14 @@
             display: block 
             padding-bottom: 100%
     &__line 
-        &::before 
-            position: absolute
-            width: 12.5%
-            top: 17.67%
-            right: 7.47%
-            content: ""
-            background: #94C8C6
-            height: 2px
-            transform: rotate(45deg)
-            z-index: 2
+        position: absolute
+        width: 12.5%
+        top: 17.67%
+        right: 7.47%
+        background: #94C8C6
+        height: 2px
+        transform: rotate(45deg)
+        z-index: 2
     &__top 
         position: relative
         padding-top: 114px
