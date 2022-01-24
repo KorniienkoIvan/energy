@@ -358,12 +358,13 @@
     .bottom_background_triangular 
         width: calc(57.25% + 2px)
         position: absolute
-        bottom: -10%
+        bottom: 0
         right: 0
         clip-path: polygon(0 100%,100% 0,100% 100%,0% 100%)
+        overflow: hidden
         img 
             width: 100% 
-            height: 100% 
+            height: 110% 
             object-fit: cover 
             object-position: center
             position: absolute
@@ -490,8 +491,9 @@
             background: #333333
             width: 37.29%
             position: absolute
-            top: -49%
+            top: 50%
             clip-path: polygon(0% 0%,100% 50%,0% 100%,0% 0)
+            overflow: hidden
             +min-screen(2160px)
                 bottom: -40%
                 top: -40%
@@ -514,10 +516,9 @@
                         content: none
             img 
                 position: absolute
-                top: 25%
-                transform: translateY(-50%)
-                width: 97.625%
+                top: 0%
                 height: 100%
+                width: calc(100% + 34px)
                 object-fit: cover
                 margin-left: -34px
                 +max-screen(1200px)

@@ -48,7 +48,7 @@ function parallax(){
              
                 },
             },   
-            bottom: $(window).width()>768?'10%':'50%',     
+            bottom: $(window).width()>768?'10%':'5%',     
         });
       
 
@@ -74,7 +74,7 @@ function parallax(){
              
                 },
             },   
-            bottom: $(window).width()>768?'20%':'50%',     
+            bottom: $(window).width()>768?'20%':'10%',     
         });
       
 
@@ -87,21 +87,21 @@ function parallax(){
 
 
     $('.brand_experience').each(function(){
-        var image = $(this).find('.bottom_background_triangular');
+        var image = $(this).find('.bottom_background_triangular img');
         var wrapper = $(this);
         gsap.to(image ,{
             scrollTrigger: {
                 trigger: wrapper,
                 pin: false,
-                start: "top top",
-                end: "bottom center",
+                start: "center top",
+                end: "+=500",
                 scrub: 1,
                 markers: false,
                 onToggle: function(self){
              
                 },
             },   
-            bottom: $(window).width()>768?'0%':'50%',     
+            top: $(window).width()>768?'-10%':'-5%',     
         });
       
 
@@ -111,34 +111,6 @@ function parallax(){
         })
        
     });
-
-
-    // $('.experimental').each(function(){
-    //     var image = $(this).find('img');
-    //     var wrapper = $(this);
-    //     gsap.to(image ,{
-    //         scrollTrigger: {
-    //             trigger: wrapper,
-    //             pin: false,
-    //             start: "top top",
-    //             end: "+=700",
-    //             scrub: 1,
-    //             markers: false,
-    //             onToggle: function(self){
-             
-    //             },
-    //         },   
-    //         top: $(window).width()>768?'50%':'50%',     
-    //     });
-      
-
-    //     $(window).on('resize', function(){
-
-    //         ScrollTrigger.refresh();
-    //     })
-       
-    // });
-
 
     $('.experimental').each(function(){
         var image = $(this).find('.experimental__header__line');
@@ -172,14 +144,14 @@ function parallax(){
                 trigger: wrapper2,
                 pin: false,
                 start: "top top",
-                end: "+=700",
+                end: "+=1000",
                 scrub: 1,
                 markers: false,
                 onToggle: function(self){
              
                 },
             },   
-            top: $(window).width()>768?'50%':'50%',     
+            top: $(window).width()>768?'10%':'10%',     
         });
       
 
