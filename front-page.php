@@ -251,5 +251,6 @@
 		<?php if($contact_email): ?><div class="contact__data__email">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>
 		<?php if($google_map): ?><div class="contact__data__google-maps"><a href="<?php echo $goolge_map['url']; ?>"><?php echo $google_map['title']; ?></a></div><?php endif; ?>	
 	</div>
+	<?php //echo do_shortcode('[ank_google_map]'); ?>
 </section>
 <?php get_footer(); ?>
