@@ -86,18 +86,27 @@ function appearence(){
     });
 
     if ($('.aboutUs').length) {
-        console.log('aboutus');
 
         $('.aboutUs').on('scroll', function(){
             console.log('aboutus');
             ScrollTrigger.refresh();
 
-        })
-    }
+        });
+    };
+
+    if ($('.single-case_study').length) {
+
+        $('.single-case_study').on('scroll', function(){
+            ScrollTrigger.refresh();
+
+        });
+    };
+
+    
 
     $(window).on("heightChanges", function(){
         ScrollTrigger.refresh();
-    })
+    });
     
 }
 

@@ -68,7 +68,7 @@ Template Name: Single page
             </div>
             <?php $full_width_image = get_field('full_width_image'); ?>
             <?php if($full_width_image): ?>
-                <div class="single-page__image">
+                <div class="single-page__image appear fade-bottom">
                     <img src="<?php echo $full_width_image; ?>" alt="">
                 </div>
             <?php endif; ?>
