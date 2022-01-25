@@ -216,6 +216,11 @@
                 .left-col,
                 .right-col 
                     width: 100%
+        &.results 
+            .text 
+                & > div 
+                    border: 1px solid #00a684
+                    padding: 32px
 .testimonial
     position: relative
     padding-bottom: 390px
@@ -258,7 +263,8 @@
     &__content
         opacity: 0
         transition: .3s 
-        &.slick-current 
+    .slick-current 
+        .testimonial__content 
             opacity: 1
 .single 
     .header 

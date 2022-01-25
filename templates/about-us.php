@@ -14,7 +14,7 @@ get_header(); ?>
             ?>
             <div class="aboutUs_block" style="background-image: url('<?php echo $background_image; ?>')">
                 <div class="aboutUs_block__content">
-                    <?php if($title): ?><h1 class="aboutUs_block__title appear fade-bottom"><?php echo $title; ?></h1><?php endif; ?>
+                    <?php if($title): ?><h1 class="aboutUs_block__title appear fade-bottom ff-bold"><?php echo $title; ?></h1><?php endif; ?>
                     <?php if($subTitle): ?><h4 class="aboutUs_block__subtitle appear fade-bottom delay-1"><?php echo $subTitle; ?></h4><?php endif; ?>
                 </div>
                 <?php if($i == 1 || $i == 2): ?>

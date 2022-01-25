@@ -21,6 +21,7 @@ function starter_load_scripts(){
 
 	/*theme css*/
 	wp_enqueue_style( 'main',get_template_directory_uri() . '/dist/main.min.css');
+	wp_enqueue_style( 'fonts',get_template_directory_uri() . '/assets/fonts/fonts.css');
 
   /*additional css*/
     

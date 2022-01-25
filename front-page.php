@@ -15,7 +15,7 @@
 	<div class="background_lines3"></div>
 	<div class="background_lines4"></div>
 	<div class="container">
-		<?php if($title): ?><h1 class="hero_block__title appear fade-right"><?php echo $title; ?></h1><?php endif; ?>
+		<?php if($title): ?><h1 class="hero_block__title appear fade-right ff-bold"><?php echo $title; ?></h1><?php endif; ?>
 		<?php if($subtitle): ?><div class="hero_block__subtitle appear fade-right delay-1"><?php echo $subtitle; ?></div><?php endif; ?>
 	</div>
 </section>
@@ -26,7 +26,7 @@
 				<?php $i = 0; ?>
 				<?php while(have_rows('links')): the_row(); ?>
 					<?php $link = get_sub_field('link'); ?>
-					<li class="anchor_links_line__item appear fade-in delay-<?php echo $i; ?>"><a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a></li>
+					<li class="anchor_links_line__item appear fade-in delay-<?php echo $i; ?>"><a href="<?php echo $link['url']; ?>" class="ff-black"><?php echo $link['title']; ?></a></li>
 					<?php $i++; ?>
 				<?php endwhile; ?>
 			</ul>
@@ -48,12 +48,12 @@
 			<div class="brand_experience__line"></div>
 			<div class="top_triangular"></div>
 			<?php if($title): ?>
-				<h2 class="brand_experience__title appear fade-left">
+				<h2 class="brand_experience__title appear fade-left ff-bold">
 					<?php echo $title; ?>
 				</h2>
 			<?php endif; ?>
 			<?php if($subtitle): ?>
-				<h3 class="brand_experience__subtitle appear fade-left delay-1">
+				<h3 class="brand_experience__subtitle appear fade-left delay-1 ff-bold">
 					<?php echo $subtitle; ?>
 				</h3>
 			<?php endif; ?>
@@ -93,7 +93,7 @@
 		?>
 		<div class="container">
 			<?php if($header_title): ?>
-				<h2 class="experimental__header__title appear fade-left">
+				<h2 class="experimental__header__title appear fade-left ff-bold">
 					<?php echo $header_title; ?>
 				</h2>
 			<?php endif; ?>
@@ -107,7 +107,7 @@
 		<div class="container">
 			<div class="experimental__main__content">
 				<?php if($title): ?>
-					<h3 class="experimental__main__title appear fade-left delay-2"><?php echo $title; ?></h3>
+					<h3 class="experimental__main__title appear fade-left delay-2 ff-bold"><?php echo $title; ?></h3>
 				<?php endif; ?>
 				<div class="separator"></div>
 				<?php if($text): ?>
@@ -133,13 +133,13 @@
 		<div class="digital_experience__contentWrapper">
 			<div class="left_transparent_triangular"></div>
 			<?php if($title): ?>
-				<h2 class="digital_experience__title appear fade-right">
+				<h2 class="digital_experience__title appear fade-right ff-bold">
 					<?php echo $title; ?>
 				</h2>
 			<?php endif; ?>
 			<div class="digital_experience__content">
 				<?php if($subtitle): ?>
-					<h3 class="digital_experience__subtitle appear fade-right delay-1">
+					<h3 class="digital_experience__subtitle appear fade-right delay-1 ff-bold">
 						<?php echo $subtitle; ?>
 					</h3>
 				<?php endif; ?>
@@ -182,8 +182,8 @@
 				<a <?php if($link): ?>href="<?php echo $link['url'] ?>"<?php endif; ?> class="col-lg-3 col-md-6 col-12 page_card appear fade-bottom" style="transition-delay: 0.<?php echo $i; ?>s;">
 					<div class="page_card__image"><img src="<?php if($image){echo $image;}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt=""></div>
 					<div class="page_card__content">
-						<?php if($title): ?><div class="page_card__title"><?php echo $title; ?></div><?php endif; ?>
-						<?php if($text): ?><div class="page_card__subtitle"><?php echo $text; ?></div><?php endif; ?>
+						<?php if($title): ?><div class="page_card__title ff-bold"><?php echo $title; ?></div><?php endif; ?>
+						<?php if($text): ?><div class="page_card__subtitle ff-bold"><?php echo $text; ?></div><?php endif; ?>
 					</div>
 					<div class="left_triangular"></div>		
 				</a>
@@ -198,8 +198,8 @@
 	<?php if($left_text || $right_text): ?>
 		<div class="page_cards_bottom">
 			<div class="container">
-				<?php if($left_text): ?><div class="page_cards_bottom__title appear fade-right delay-2"><?php echo $left_text; ?></div><?php endif; ?>
-				<?php if($right_text): ?><div class="page_cards_bottom__subtitle appear fade-left delay-2"><?php echo $right_text; ?></div><?php endif; ?>
+				<?php if($left_text): ?><div class="page_cards_bottom__title appear fade-right delay-2 ff-bold"><?php echo $left_text; ?></div><?php endif; ?>
+				<?php if($right_text): ?><div class="page_cards_bottom__subtitle appear fade-left delay-2 ff-bold"><?php echo $right_text; ?></div><?php endif; ?>
 			</div>
 		</div>
 	<?php endif; ?>
@@ -224,8 +224,8 @@
 								<div class="left_triangular"></div>
 								<img src="<?php if($image){echo $image['url'];}else{echo get_template_directory_uri() . '/assets/images/card_img_placeholder.png';} ?>" alt="">
 							</div>
-							<?php if($name): ?><div class="contact__card__name"><?php echo $name; ?></div><?php endif; ?>
-							<?php if($position): ?><div class="contact__card__position"><?php echo $position; ?></div><?php endif; ?>
+							<?php if($name): ?><div class="contact__card__name ff-bold"><?php echo $name; ?></div><?php endif; ?>
+							<?php if($position): ?><div class="contact__card__position ff-bold"><?php echo $position; ?></div><?php endif; ?>
 						</div>
 						<?php $i++; ?>
 					<?php endwhile; ?>
@@ -242,16 +242,16 @@
 	?>
 	<?php if($left_side_title): ?>
 		<div class="contact__titleWrapper appear fade-right delay-2">
-			<div class="contact__title">
+			<div class="contact__title ff-bold">
 				<?php echo $left_side_title; ?>
 			</div>
 		</div>
 	<?php endif; ?>
 	<div class="contact__data appear fade-left delay-2" id="contact">
-		<?php if($contact_text): ?><div class="contact__data__text"><?php echo $contact_text; ?></div><?php endif; ?>
-		<?php if($contact_phone): ?><div class="contact__data__phone">T: <a href="<?php echo $contact_phone; ?>"><?php echo $contact_phone['title']; ?></a></div><?php endif; ?>
-		<?php if($contact_email): ?><div class="contact__data__email">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>
-		<?php if($google_map): ?><div class="contact__data__google-maps"><a href="<?php echo $goolge_map['url']; ?>"><?php echo $google_map['title']; ?></a></div><?php endif; ?>	
+		<?php if($contact_text): ?><div class="contact__data__text ff-bold"><?php echo $contact_text; ?></div><?php endif; ?>
+		<?php if($contact_phone): ?><div class="contact__data__phone ff-bold">T: <a href="<?php echo $contact_phone; ?>"><?php echo $contact_phone['title']; ?></a></div><?php endif; ?>
+		<?php if($contact_email): ?><div class="contact__data__email ff-bold">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>
+		<?php if($google_map): ?><div class="contact__data__google-maps ff-black"><a href="<?php echo $goolge_map['url']; ?>"><?php echo $google_map['title']; ?></a></div><?php endif; ?>	
 	</div>
 	<div class="home_page_map appear fade-left delay-3"><?php echo do_shortcode('[ank_google_map]'); ?></div>
 </section>

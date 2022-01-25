@@ -33,8 +33,8 @@ Template Name: Our Work
                     <a href="<?php echo get_permalink() ?>" class="col-md-6 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>">
                         <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                         <div class="card__content">
-                            <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                            <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                         </div>
                     <div class="left_triangular"></div>
                     </a>
@@ -49,8 +49,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-md-6 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .1s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -69,8 +69,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-md-6 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .15s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -85,8 +85,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-12 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .2s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?>E</div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?>E</div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -107,8 +107,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-12 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .25s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -127,8 +127,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-md-6 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .3s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -143,8 +143,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-md-6 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .35s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -165,8 +165,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-lg-6 col-12 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .4s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -185,8 +185,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-lg-6 col-12 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .45s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>
@@ -201,8 +201,8 @@ Template Name: Our Work
                 <a href="<?php echo get_permalink() ?>" class="col-lg-6 col-12 card fade-bottom appear <?php echo the_field('triangular_and_line_color'); ?>" style="transition-delay: .5s;">
                     <div class="card__background"><img src="<?php echo get_the_post_thumbnail_url() ?>"></div>
                     <div class="card__content">
-                        <div class="card__title"><?php the_title(); ?></div>
-                            <div class="card__subtitle"><?php echo the_field('subtitle'); ?></div>
+                        <div class="card__title ff-bold"><?php the_title(); ?></div>
+                            <div class="card__subtitle ff-bold"><?php echo the_field('subtitle'); ?></div>
                     </div>
                     <div class="left_triangular"></div>
                 </a>

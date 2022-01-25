@@ -15,7 +15,6 @@ Template Name: Single page
     <div class="left_side_background">
         <div class="single-page__lines1"></div>
         <div class="single-page__lines2"></div>
-
     </div>
     <div class="right_side_image"><img src="<?php echo $featured_image_url;?>" alt=""></div>
 
@@ -27,8 +26,8 @@ Template Name: Single page
                 $header_content = get_field('single_header_content');
             ?>
             <?php if($header_logo): ?><div class="single-page__logoWrapper appear fade-right"><div class="single-page__logo"><img src="<?php echo $header_logo; ?>" alt=""></div></div><?php endif; ?>
-            <?php if($header_title): ?><h2 class="single-page__title appear fade-right delay-1"><?php echo $header_title; ?></h2><?php endif; ?>
-            <?php if($header_content): ?><h3 class="single-page__subtitle appear fade-right delay-2"><?php echo $header_content; ?></h3><?php endif; ?>
+            <?php if($header_title): ?><h2 class="single-page__title appear fade-right delay-1 ff-bold"><?php echo $header_title; ?></h2><?php endif; ?>
+            <?php if($header_content): ?><h3 class="single-page__subtitle appear fade-right delay-2 ff-bold"><?php echo $header_content; ?></h3><?php endif; ?>
             <div class="separator"></div>
             <?php 
                 $challenge_title = get_field('challenge_title');
@@ -36,11 +35,11 @@ Template Name: Single page
                 $challenge_right_column = get_field('challenge_right_column');
             ?>
             <div class="single-page__additional-text">
-                <?php if($challenge_title): ?><h3 class="title appear fade-bottom"><?php echo $challenge_title; ?></h3><?php endif; ?>
+                <?php if($challenge_title): ?><h3 class="title appear fade-bottom ff-bold"><?php echo $challenge_title; ?></h3><?php endif; ?>
                 <?php if($challenge_left_column || $challenge_right_column): ?>
                     <div class="text content-block">
-                        <div class="left-col appear fade-right delay-1"><?php echo $challenge_left_column; ?></div>
-                        <div class="right-col appear fade-left delay-1"><?php echo $challenge_right_column; ?></div>
+                        <?php if($challenge_left_column): ?><div class="left-col appear fade-right delay-1"><?php echo $challenge_left_column; ?></div><?php endif; ?>
+                        <?php if($challenge_right_column): ?><div class="right-col appear fade-left delay-1"><?php echo $challenge_right_column; ?></div><?php endif; ?>
                     </div>
                 <?php endif; ?>
             </div>
@@ -59,12 +58,12 @@ Template Name: Single page
                 $results_left_column = get_field('results_left_column');
                 $results_right_column = get_field('results_right_column');
             ?>
-            <div class="single-page__additional-text">
-                <?php if($results_title): ?><h3 class="title appear fade-bottom"><?php echo $results_title; ?></h3><?php endif; ?>
+            <div class="single-page__additional-text results">
+                <?php if($results_title): ?><h3 class="title appear fade-bottom ff-bold"><?php echo $results_title; ?></h3><?php endif; ?>
                 <?php if($results_left_column || $results_right_column): ?>
                     <div class="text">
-                        <div class="left-col appear fade-right delay-1"><?php echo $results_left_column; ?></div>
-                        <div class="right-col appear fade-left delay-1"><?php echo $results_right_column; ?></div>
+                        <?php if($results_left_column): ?><div class="left-col appear fade-right delay-1"><?php echo $results_left_column; ?></div><?php endif; ?>
+                        <?php if($results_right_column): ?><div class="right-col appear fade-left delay-1"><?php echo $results_right_column; ?></div><?php endif; ?>
                     </div>
                 <?php endif; ?>
             </div>
@@ -87,10 +86,10 @@ Template Name: Single page
                     $content = $testimonial->post_content;    
                 ?>
                 <div class="testimonial__content">
-                    <h3 class="testimonial__text">
+                    <h3 class="testimonial__text ff-bold">
                         <?php echo $content; ?>
                     </h3>
-                    <h3 class="testimonial__author">
+                    <h3 class="testimonial__author ff-bold">
                         <?php echo $title; ?>
                     </h3>
                 </div>
