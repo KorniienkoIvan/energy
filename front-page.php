@@ -36,7 +36,6 @@
 <?php $id = get_field('brand_experience_block_id'); ?>
 <section class="brand_experience" id="<?php echo $id; ?>">
 	<div class="background_triangular"></div>
-	<div class="brand_experience__line"></div>
 	<div class="brand_experience__top">
 		<div class="container">
 			<?php 
@@ -46,6 +45,7 @@
 				$left_col_text = get_field('brand_experience_left_col_text');
 				$right_col_text = get_field('brand_experience_right_col_text');
 			?>
+			<div class="brand_experience__line"></div>
 			<div class="top_triangular"></div>
 			<?php if($title): ?>
 				<h2 class="brand_experience__title appear fade-left">
@@ -253,7 +253,7 @@
 		<?php if($contact_email): ?><div class="contact__data__email">E: <a href="<?php echo $contact_email['url'] ?>"><?php echo $contact_email['title']; ?></a></div><?php endif; ?>
 		<?php if($google_map): ?><div class="contact__data__google-maps"><a href="<?php echo $goolge_map['url']; ?>"><?php echo $google_map['title']; ?></a></div><?php endif; ?>	
 	</div>
-	<?php echo do_shortcode('[ank_google_map]'); ?>
+	<div class="home_page_map"><?php echo do_shortcode('[ank_google_map]'); ?></div>
 </section>
 
 <?php get_footer(); ?>

@@ -242,8 +242,8 @@
     &__line 
         position: absolute
         width: 12.5%
-        top: 17.67%
-        right: 7.47%
+        top: 34.67%
+        right: -24%
         background: #94C8C6
         height: 2px
         transform: rotate(45deg)
@@ -882,9 +882,9 @@
 .contact
     background: #CA3240
     position: relative
-    padding-bottom: 502px
+    padding-bottom: 602px
     +max-screen(768px)
-        padding-bottom: 96px
+        padding-bottom: 42px
     &__cards_wrapper
         padding-top: 117px 
         padding-bottom: 177px
@@ -992,16 +992,22 @@
         letter-spacing: 19.5px
         +max-screen(1919px)
             letter-spacing: 0
-        +max-screen(1400px)
+        +max-screen(1440px)
             +min-screen(1201px)
                 font-size: 100px
                 letter-spacing: 0
-
+                top: 42%
+                right: 10%
+            +min-screen(1320px)
+                right: 12%     
+            +min-screen(1400px)
+                right: 15%
+                top: 43%           
         +max-screen(1200px)
             +min-screen(993px)
                 font-size: 80px
                 letter-spacing: 0
-                top: 44%
+                top: 41%
         +max-screen(992px)
             font-size: 56px
             letter-spacing: 0
@@ -1036,14 +1042,24 @@
             background: #121938
             width: 48.43%
             height: 97%
-            clip-path: polygon(0 0,100% 51%,0% 100%,0% 0)
+            clip-path: polygon(0 0,100% 49%,0% 100%,0% 0)
             transition-property: transform, opacity
+            +max-screen(1440px)
+                height: 99%
+                clip-path: polygon(0 0,100% 46%,0 100%,0 0)
+                +min-screen(1320px)
+                    height: 97%
+                    clip-path: polygon(0 0,100% 47%,0 100%,0 0)
+                +min-screen(1400px)
+                    clip-path: polygon(0 0,100% 47%,0 100%,0 0)
             +max-screen(1200px)
                 +min-screen(993px)
-                    clip-path: polygon(0 0,100% 47.5%,0 100%,0 0)
+                    clip-path: polygon(0 0,100% 44.5%,0 100%,0 0)
             +max-screen(992px)
-                clip-path: polygon(0 0,100% 19%,0 100%,0 0)
-                height: 61%
+                clip-path: polygon(0 0,100% 17%,0 100%,0 0)
+                height: 64%
+                +min-screen(900px)
+                    height: 62%
             +max-screen(768px)
                 position: static 
                 background: transparent 
@@ -1058,20 +1074,16 @@
         font-size: 32.84px
         line-height: 1.2454
         right: 7.8%
-        bottom: 307px
-        +max-screen(1919px)
-            bottom: 7%
+        bottom: 18%
         +max-screen(1400px)
             +min-screen(1201px)
-                bottom: 10%
+                bottom: 18%
         +max-screen(1200px)
             +min-screen(993px)
-                bottom: 8%
                 right: 3.8%
                 left: 55%
         +max-screen(992px)
             right: 2.8% 
-            bottom: 12%
             left: 57%
             font-size: 26px
         +max-screen(768px)
@@ -1116,6 +1128,24 @@
             left: 0
         .single-page__wrapper &
             background-color: #CA3240
-
-
-
+.home_page_map
+    position: absolute
+    bottom: 1%
+    left: 59% 
+    width: 30%
+    height: 15%
+    & > .agm-canvas
+        height: 100% !important
+    +max-screen(1200px)
+        width: 42%
+        left: 55%
+    +max-screen(992px)
+        left: 57%
+        width: 39%
+        height: 15%
+    +max-screen(768px)
+        position: static
+        width: auto
+        margin-left: 30px 
+        margin-right: 30px 
+        margin-top: 32px
