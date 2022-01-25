@@ -30,13 +30,17 @@
 	.logo 
 		width: 100% 
 		max-width: 273px 
+		+max-screen(1650px)
+			max-width: 170px
+		+max-screen(1440px)
+			max-width: 150px
 		a
 			display: flex 
 		svg
 			width: 100%
 			height: 100%
 		+max-screen(1440px)
-			max-width: 200px
+			max-width: 170px
 		+max-screen(1200px)
 			max-width: 200px
 		+max-screen(992px)
@@ -106,7 +110,7 @@
 				font-size: 26px
 				position: relative
 				+max-screen(1440px)
-					font-size: 20px
+					font-size: 18px
 				+max-screen(1200px)
 					font-size: 18px
 				+max-screen(992px)
