@@ -25,9 +25,31 @@
         p
             margin-bottom: 15px
 .footer
+    position: relative
     .page-template-default:not(.home) &
         padding-bottom: 60px
     .back_to_top_button
         .page-template-default &
             margin-top: 0
             color: #ca3240
+    .home &
+        background-color: #ca3240
+        .footer__privacy
+            left: 50%
+            transform: translateX(-50%)
+            text-align: center
+            top: -75px
+    .single-case_study &
+        .footer__privacy
+            color: #ca3240
+    &__privacy
+        position: absolute
+        right: 0
+        bottom: 0
+        display: block
+        text-align: right
+        padding: 20px
+        color: white
+        text-decoration: underline
+        &:hover
+            text-decoration: none
