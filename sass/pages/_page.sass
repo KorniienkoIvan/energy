@@ -39,6 +39,9 @@
             transform: translateX(-50%)
             text-align: center
             top: -75px
+            +max-screen($breakpoint-md)
+                position: relative
+                top: 0
     .single-case_study &
         .footer__privacy
             color: #ca3240
@@ -51,5 +54,10 @@
         padding: 20px
         color: white
         text-decoration: underline
+        +max-screen($breakpoint-md)
+            display: none
         &:hover
             text-decoration: none
+.hide-desktop
+    +min-screen($breakpoint-md)
+        display: none !important
