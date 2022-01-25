@@ -242,11 +242,11 @@
                                 justify-content: flex-end
                                 margin-bottom: -100%
                         +max-screen(768px)
-                            max-width: 50%
-                            margin-left: auto
                             +min-screen(560px)
                                 margin-top: -50%
                                 justify-content: flex-end
+                                max-width: 50%
+                                margin-left: auto
                     .card 
                         &::before 
                             padding-bottom: 50%
@@ -290,8 +290,9 @@
             &s_col 
                 &:first-child
                     +max-screen(768px)
-                        z-index: 3
-                        max-width: 50%
+                        +min-screen(560px)
+                            z-index: 3
+                            max-width: 50%
                     .card 
                         +max-screen(768px)
                             max-width: 100%
@@ -321,3 +322,13 @@
         +max-screen(1200px)
             flex: 0 0 100% 
             max-width: 100%
+.cards_col
+    .card 
+        position: relative
+        z-index: 5
+        transition-delay: 0s !important
+        &:hover 
+            cursor: pointer
+            z-index: 10
+            transform: scale(1.05)
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important
